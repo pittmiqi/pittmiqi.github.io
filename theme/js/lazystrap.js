@@ -10,4 +10,4 @@ function set_years(startYear) {
 
 $(document.links).filter(function() {
   return this.hostname != window.location.hostname;
-}).attr('target', '_blank');
+}).attr('target', '_self');
