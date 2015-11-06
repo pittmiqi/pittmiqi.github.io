@@ -1,27 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Path of Learning</title><link href="http://pathoflearning.com/" rel="alternate"></link><link href="http://pathoflearning.com/feeds/misc.atom.xml" rel="self"></link><id>http://pathoflearning.com/</id><updated>2015-11-06T11:50:00-05:00</updated><entry><title>How to setup website in Python</title><link href="http://pathoflearning.com/blog/How-to-setup-website-python" rel="alternate"></link><updated>2015-11-06T11:50:00-05:00</updated><author><name>Qi Mi</name></author><id>tag:pathoflearning.com,2015-11-06:blog/How-to-setup-website-python</id><summary type="html">&lt;p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Path of Learning - 书路</title><link href="http://pathoflearning.com/" rel="alternate"></link><link href="http://pathoflearning.com/feeds/misc.atom.xml" rel="self"></link><id>http://pathoflearning.com/</id><updated>2015-11-06T11:50:00-05:00</updated><entry><title>How to setup website in Python</title><link href="http://pathoflearning.com/blog/How-to-setup-website-python" rel="alternate"></link><updated>2015-11-06T11:50:00-05:00</updated><author><name>Qi Mi</name></author><id>tag:pathoflearning.com,2015-11-06:blog/How-to-setup-website-python</id><summary type="html">&lt;p&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;This is the first post for my website. I decided to put the guides for how to set up a static website using &lt;a href="http://docs.getpelican.com/"&gt;pelican&lt;/a&gt; based on &lt;a href="https://www.continuum.io/downloads"&gt;Python&lt;/a&gt; and freely hosted in &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;.
-This post was all written in &lt;a href="http://ipython.org/notebook.html"&gt;ipython notebook&lt;/a&gt; or &lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; which are also Python based tool and it is the primary reason that I chose pelican instead of other static site generators, such as Ruby based &lt;a href="https://www.staticgen.com/"&gt;Jekyll&lt;/a&gt; or Javascript based &lt;a href="https://www.staticgen.com/"&gt;Hexo&lt;/a&gt;, etc.&lt;/p&gt;
+&lt;p&gt;This is the first post for my website. I decided to put the guides for how to set up a static website using &lt;a href="https://www.continuum.io/downloads"&gt;Python&lt;/a&gt; based &lt;a href="http://docs.getpelican.com/"&gt;pelican&lt;/a&gt; and freely hosted in &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;.
+This post was all written in &lt;a href="http://ipython.org/notebook.html"&gt;ipython notebook&lt;/a&gt; or &lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt; which are also Python based tools and it is the primary reason for me to choose pelican instead of other static site generators, such as Ruby based &lt;a href="https://www.staticgen.com/"&gt;Jekyll&lt;/a&gt; or Javascript based &lt;a href="https://www.staticgen.com/"&gt;Hexo&lt;/a&gt;, etc.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Register an account in Github and and setup a repository called "&lt;em&gt;yourname&lt;/em&gt;.github.io" (replace &lt;em&gt;yourname&lt;/em&gt; with your github username) where we will use to upload the content fo website, see &lt;a href="https://pages.github.com/"&gt;this for detail&lt;/a&gt;. &lt;/li&gt;
 &lt;li&gt;Install pelican, follow &lt;a href="docs.getpelican.com"&gt;this guide&lt;/a&gt;, create content in &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;markdown language&lt;/a&gt;, upload the output you generated to &lt;b&gt;1&lt;/b&gt;, then done!&lt;/li&gt;
 &lt;li&gt;If you want to change the looks for the site, check out &lt;a href="http://www.pelicanthemes.com/"&gt;pelican-themes&lt;/a&gt; and its Github &lt;a href="https://github.com/getpelican/pelican-themes"&gt;repository&lt;/a&gt;. The current theme for this site is adapted from &lt;a href="https://github.com/lazycoder-ru/lazystrap"&gt;lazystrap&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Want to use ipython notebook in pelican? see &lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;Jake VanderPlas' post&lt;/a&gt; and checkout &lt;a href="https://github.com/jakevdp/PythonicPerambulations"&gt;source file at Github&lt;/a&gt;. Use the settings in his &lt;a href="https://github.com/jakevdp/PythonicPerambulations/blob/master/pelicanconf.py"&gt;pelicanconf.py&lt;/a&gt; file&lt;p&gt;&lt;/li&gt;
 &lt;li&gt;Other tips:&lt;ul&gt;
-&lt;li&gt;GOOGLE_ANALYTICS, &lt;a href="https://www.google.com/analytics/"&gt;register here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google Analytics, &lt;a href="https://www.google.com/analytics/"&gt;register here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;DISQUS for comments, &lt;a href="https://disqus.com/"&gt;register here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;I used the command "pelican content" to generate the output, and I have to move settings in publishconf.py to pelicanconf.py     in order to get GOOGLE_ANALYTICS and DISQUS_SITENAME rendered.  &lt;/li&gt;
 &lt;li&gt;Make sure to set value for SITEURL, and set RELATIVE_URLS = Ture for testing and False for production.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;If you have questions, please leave the comments below.&lt;/p&gt;
+&lt;p&gt;This is the minimal guide for setting up a static website using Python. If you have questions, please leave the comments below.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;&lt;/p&gt;</summary><category term="python"></category><category term="pelican"></category><category term="website"></category></entry></feed>
