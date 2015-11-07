@@ -38,6 +38,7 @@
     ga('create', 'UA-69748436-1');
     ga('send', 'pageview');
 </script>
+    
 </head>
 <body onload="set_years(2015)">
 	<a href="https://github.com/pittmiqi" target="blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
@@ -57,7 +58,7 @@
           <h2 class="post-header">Post tagged by <i>website</i></h2>
           <div class="post-content">
             <div class="recent-post-header">
-              <h4><a target="_self" id="protected" class="header-link" href="http://pathoflearning.com/blog/How-to-setup-website-python">How to setup website in Python&nbsp;<span class="link">&raquo;</span></a></h4>            
+              <h4><a target="_self" id="protected" class="header-link" href="http://pathoflearning.com/blog/How-to-setup-website-python">How to setup website with Python&nbsp;<span class="link">&raquo;</span></a></h4>            
               <div class="tags">
                 <a href="http://pathoflearning.com/tag/python">@python</a>
                 <a href="http://pathoflearning.com/tag/pelican">@pelican</a>
@@ -82,6 +83,27 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+// create the back to top button
+$('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > amountScrolled) {
+    $('a.back-to-top').fadeIn('slow');
+  } else {
+    $('a.back-to-top').fadeOut('slow');
+  }
+});
+
+$('a.back-to-top, a.simple-back-to-top').click(function() {
+  $('body').animate({
+    scrollTop: 0
+  }, 'fast');
+  return false;
+});
+</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="http://pathoflearning.com/theme/js/lightbox-2.6.min.js"></script>
     <script src="http://pathoflearning.com/theme/js/lazystrap.js"></script>
