@@ -10,11 +10,11 @@
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The purpose of this site is to share the experience, guides and pathes of learning. The content in the site targets for a concise fashion and will leverage others exisiting work as much as possible. In most of posts, what you will see will be a bunch of hyperlinks that lead to other valuable resources. Essentially what I do is to organize them in a logical way to provide you a high level guide that leads to the learning goal.&lt;/p&gt;
+&lt;p&gt;The purpose of this site is to share the experience, guides and pathes of learning. The content in the site targets for a concise fashion and will leverage others exisiting work as much as possible. In most of posts, what you will see will be a bunch of hyperlinks that lead to other valuable resources. Essentially what I do is to organize them in a logical way to provide a high level guide that help you reach the learning goal.&lt;/p&gt;
 &lt;p&gt;So in the first post, I put a guide for how to set up a static website using &lt;a href="https://www.continuum.io/downloads"&gt;Python&lt;/a&gt; based &lt;a href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt; framework and freely host it in &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;.
 This post was all written in &lt;a href="http://ipython.org/notebook.html"&gt;ipython notebook&lt;/a&gt; or &lt;a href="http://jupyter.org/"&gt;jupyter&lt;/a&gt;. The ease of integration of ipython notebook to the web content is the primary reason for me to choose pelican over other static site generators, such as Ruby based &lt;a href="https://www.staticgen.com/"&gt;Jekyll&lt;/a&gt; or Javascript based &lt;a href="https://www.staticgen.com/"&gt;Hexo&lt;/a&gt;, etc.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Register an account in Github and and setup a repository called "&lt;em&gt;yourname&lt;/em&gt;.github.io" (replace &lt;em&gt;yourname&lt;/em&gt; with your github username) where we will use to upload the content fo website, see &lt;a href="https://pages.github.com/"&gt;this for detail&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;Register an account in Github and and setup a repository called "&lt;em&gt;yourname&lt;/em&gt;.github.io" (replace &lt;em&gt;yourname&lt;/em&gt; with your github username) where we will upload the content of website, see &lt;a href="https://pages.github.com/"&gt;this for detail&lt;/a&gt;. &lt;/li&gt;
 &lt;li&gt;Install pelican, follow &lt;a href="http://docs.getpelican.com"&gt;this guide&lt;/a&gt;, create content in &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;markdown language&lt;/a&gt;, upload the output you generated to &lt;b&gt;1&lt;/b&gt;, then done!&lt;/li&gt;
 &lt;li&gt;If you want to change the looks for the site, check out &lt;a href="http://www.pelicanthemes.com/"&gt;pelican-themes&lt;/a&gt; and its Github &lt;a href="https://github.com/getpelican/pelican-themes"&gt;repository&lt;/a&gt;. The current theme for this site is adapted from &lt;a href="https://github.com/lazycoder-ru/lazystrap"&gt;lazystrap&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Want to use ipython notebook in pelican? see &lt;a href="https://jakevdp.github.io/blog/2013/05/07/migrating-from-octopress-to-pelican/"&gt;Jake VanderPlas' post&lt;/a&gt; and checkout &lt;a href="https://github.com/jakevdp/PythonicPerambulations"&gt;source file at Github&lt;/a&gt;. Use the settings in his &lt;a href="https://github.com/jakevdp/PythonicPerambulations/blob/master/pelicanconf.py"&gt;pelicanconf.py&lt;/a&gt; file&lt;p&gt;&lt;/li&gt;
@@ -32,7 +32,7 @@ This post was all written in &lt;a href="http://ipython.org/notebook.html"&gt;ip
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;This is the minimal guide for setting up a static website using Python. If you have questions, please leave the comments below.&lt;/p&gt;
+&lt;p&gt;This is the minimal guide for setting up a static website using Python. Thanks!&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
