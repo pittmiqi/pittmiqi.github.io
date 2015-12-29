@@ -1,5 +1,458 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Path of Learning - 書路</title><link href="http://pathoflearning.com/" rel="alternate"></link><link href="http://pathoflearning.com/feeds/misc.atom.xml" rel="self"></link><id>http://pathoflearning.com/</id><updated>2015-11-09T14:14:00-05:00</updated><entry><title>Thoughts on English and Chinese</title><link href="http://pathoflearning.com/blog/thoughts-on-english-chinese" rel="alternate"></link><updated>2015-11-09T14:14:00-05:00</updated><author><name>Qi Mi</name></author><id>tag:pathoflearning.com,2015-11-09:blog/thoughts-on-english-chinese</id><summary type="html">&lt;p&gt;Random Thoughts in English in comparison of Chinese (not in formal form yet, excuse for the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Path of Learning - 書路</title><link href="http://pathoflearning.com/" rel="alternate"></link><link href="http://pathoflearning.com/feeds/misc.atom.xml" rel="self"></link><id>http://pathoflearning.com/</id><updated>2015-12-29T11:50:00-05:00</updated><entry><title>A Demo for using Javascript as Front-end in Ipython Notebook</title><link href="http://pathoflearning.com/blog/javascript-front-end-ipython-notebook" rel="alternate"></link><updated>2015-12-29T11:50:00-05:00</updated><author><name>Qi Mi</name></author><id>tag:pathoflearning.com,2015-12-29:blog/javascript-front-end-ipython-notebook</id><summary type="html">&lt;p&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;html&lt;/span&gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;http://www.pitt.edu/~qim3/js/keen-dashboards.css&amp;quot; rel =&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;script src=&amp;quot;http://www.pitt.edu/~qim3/js/jquery-ui-new.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;http://www.pitt.edu/~qim3/js/test.js&amp;quot;&amp;gt; &amp;lt;/script&amp;gt;
+&amp;lt;script src= &amp;quot;http://www.pitt.edu/~qim3/js/c3-new.js&amp;quot;&amp;gt; &amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;http://www.pitt.edu/~qim3/js/dc-new.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;https://code.highcharts.com/highcharts.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;https://code.highcharts.com/modules/exporting.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+
+&lt;div class="output_html rendered_html output_subarea "&gt;
+&lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"&gt;
+&lt;link href="http://www.pitt.edu/~qim3/js/keen-dashboards.css" rel ="stylesheet" type="text/css"&gt;
+&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" type="text/css"&gt;
+&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.css" rel="stylesheet" type="text/css"&gt;
+&lt;script src="http://www.pitt.edu/~qim3/js/jquery-ui-new.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://www.pitt.edu/~qim3/js/test.js"&gt; &lt;/script&gt;
+&lt;script src= "http://www.pitt.edu/~qim3/js/c3-new.js"&gt; &lt;/script&gt;
+&lt;script src="http://www.pitt.edu/~qim3/js/dc-new.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.highcharts.com/highcharts.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.highcharts.com/modules/exporting.js"&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pickle&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;warnings&lt;/span&gt;
+&lt;span class="n"&gt;warnings&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;filterwarnings&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ignore&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sqlite3&lt;/span&gt;
+
+&lt;span class="c"&gt;# Create a SQL connection to our SQLite database&lt;/span&gt;
+&lt;span class="n"&gt;con&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sqlite3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;HGT.db&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_sql_query&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;SELECT * from hgt10&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;con&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c"&gt;#Be sure to close the connection.&lt;/span&gt;
+&lt;span class="n"&gt;con&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="n"&gt;SH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;市场&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;上海&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;SH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;drop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;id&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# remove id column&lt;/span&gt;
+&lt;span class="n"&gt;SH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;drop_duplicates&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# remove the duplicates&lt;/span&gt;
+&lt;span class="n"&gt;SH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;日期&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;SH_output&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_json&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;orient&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;records&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;date_unit&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;s&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;text_file&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;HGT_JSON.txt&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;w&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;text_file&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;SH_output&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;text_file&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;close&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="n"&gt;yutong&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;名称&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;宇通客车&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;yutong&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;yutong&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;日期&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;yutong&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
+
+&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
+&lt;div&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;市场&lt;/th&gt;
+      &lt;th&gt;日期&lt;/th&gt;
+      &lt;th&gt;代码&lt;/th&gt;
+      &lt;th&gt;名称&lt;/th&gt;
+      &lt;th&gt;收盘价&lt;/th&gt;
+      &lt;th&gt;涨跌幅&lt;/th&gt;
+      &lt;th&gt;净买额&lt;/th&gt;
+      &lt;th&gt;买入金额&lt;/th&gt;
+      &lt;th&gt;卖出金额&lt;/th&gt;
+      &lt;th&gt;成交金额&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;5417&lt;/th&gt;
+      &lt;td&gt;上海&lt;/td&gt;
+      &lt;td&gt;2014-11-28 00:00:00.000000&lt;/td&gt;
+      &lt;td&gt;600066&lt;/td&gt;
+      &lt;td&gt;宇通客车&lt;/td&gt;
+      &lt;td&gt;18.67&lt;/td&gt;
+      &lt;td&gt;-0.37&lt;/td&gt;
+      &lt;td&gt;205870534&lt;/td&gt;
+      &lt;td&gt;206029384&lt;/td&gt;
+      &lt;td&gt;158850&lt;/td&gt;
+      &lt;td&gt;206188234&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;5329&lt;/th&gt;
+      &lt;td&gt;上海&lt;/td&gt;
+      &lt;td&gt;2014-12-05 00:00:00.000000&lt;/td&gt;
+      &lt;td&gt;600066&lt;/td&gt;
+      &lt;td&gt;宇通客车&lt;/td&gt;
+      &lt;td&gt;20.52&lt;/td&gt;
+      &lt;td&gt;3.43&lt;/td&gt;
+      &lt;td&gt;212824752&lt;/td&gt;
+      &lt;td&gt;230059195&lt;/td&gt;
+      &lt;td&gt;17234443&lt;/td&gt;
+      &lt;td&gt;247293638&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;5308&lt;/th&gt;
+      &lt;td&gt;上海&lt;/td&gt;
+      &lt;td&gt;2014-12-08 00:00:00.000000&lt;/td&gt;
+      &lt;td&gt;600066&lt;/td&gt;
+      &lt;td&gt;宇通客车&lt;/td&gt;
+      &lt;td&gt;21.08&lt;/td&gt;
+      &lt;td&gt;2.73&lt;/td&gt;
+      &lt;td&gt;125841391&lt;/td&gt;
+      &lt;td&gt;164212401&lt;/td&gt;
+      &lt;td&gt;38371010&lt;/td&gt;
+      &lt;td&gt;202583412&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;5287&lt;/th&gt;
+      &lt;td&gt;上海&lt;/td&gt;
+      &lt;td&gt;2014-12-09 00:00:00.000000&lt;/td&gt;
+      &lt;td&gt;600066&lt;/td&gt;
+      &lt;td&gt;宇通客车&lt;/td&gt;
+      &lt;td&gt;20.98&lt;/td&gt;
+      &lt;td&gt;-0.47&lt;/td&gt;
+      &lt;td&gt;233476417&lt;/td&gt;
+      &lt;td&gt;242712234&lt;/td&gt;
+      &lt;td&gt;9235817&lt;/td&gt;
+      &lt;td&gt;251948051&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;5264&lt;/th&gt;
+      &lt;td&gt;上海&lt;/td&gt;
+      &lt;td&gt;2014-12-10 00:00:00.000000&lt;/td&gt;
+      &lt;td&gt;600066&lt;/td&gt;
+      &lt;td&gt;宇通客车&lt;/td&gt;
+      &lt;td&gt;22.42&lt;/td&gt;
+      &lt;td&gt;6.86&lt;/td&gt;
+      &lt;td&gt;82719826&lt;/td&gt;
+      &lt;td&gt;140461013&lt;/td&gt;
+      &lt;td&gt;57741187&lt;/td&gt;
+      &lt;td&gt;198202201&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[6]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.display&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Javascript&lt;/span&gt;
+&lt;span class="c"&gt;#runs arbitrary javascript, client-side&lt;/span&gt;
+&lt;span class="c"&gt;#out = Mytools.pdToJSON(MODS.data)&lt;/span&gt;
+
+&lt;span class="c"&gt;#out = yutong.to_json(orient=&amp;#39;columns&amp;#39;,date_unit=&amp;#39;s&amp;#39;)&lt;/span&gt;
+&lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;yutong&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_json&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;orient&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;records&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;date_unit&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;s&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c"&gt;# There should be no code after Javascript &lt;/span&gt;
+&lt;span class="n"&gt;Javascript&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="s"&gt;           window.out={};&lt;/span&gt;
+&lt;span class="s"&gt;           &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[6]:&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_javascript output_execute_result"&gt;
+&lt;script type="text/javascript"&gt;
+
+           window.out=[{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-11-28 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":18.67,"\u6da8\u8dcc\u5e45":-0.37,"\u51c0\u4e70\u989d":205870534,"\u4e70\u5165\u91d1\u989d":206029384,"\u5356\u51fa\u91d1\u989d":158850,"\u6210\u4ea4\u91d1\u989d":206188234},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-12-05 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.52,"\u6da8\u8dcc\u5e45":3.43,"\u51c0\u4e70\u989d":212824752,"\u4e70\u5165\u91d1\u989d":230059195,"\u5356\u51fa\u91d1\u989d":17234443,"\u6210\u4ea4\u91d1\u989d":247293638},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-12-08 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.08,"\u6da8\u8dcc\u5e45":2.73,"\u51c0\u4e70\u989d":125841391,"\u4e70\u5165\u91d1\u989d":164212401,"\u5356\u51fa\u91d1\u989d":38371010,"\u6210\u4ea4\u91d1\u989d":202583412},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-12-09 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.98,"\u6da8\u8dcc\u5e45":-0.47,"\u51c0\u4e70\u989d":233476417,"\u4e70\u5165\u91d1\u989d":242712234,"\u5356\u51fa\u91d1\u989d":9235817,"\u6210\u4ea4\u91d1\u989d":251948051},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-12-10 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":22.42,"\u6da8\u8dcc\u5e45":6.86,"\u51c0\u4e70\u989d":82719826,"\u4e70\u5165\u91d1\u989d":140461013,"\u5356\u51fa\u91d1\u989d":57741187,"\u6210\u4ea4\u91d1\u989d":198202201},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-12-11 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.91,"\u6da8\u8dcc\u5e45":-2.27,"\u51c0\u4e70\u989d":130759,"\u4e70\u5165\u91d1\u989d":84574109,"\u5356\u51fa\u91d1\u989d":84443350,"\u6210\u4ea4\u91d1\u989d":169017459},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-12-15 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":22.06,"\u6da8\u8dcc\u5e45":3.23,"\u51c0\u4e70\u989d":24071843,"\u4e70\u5165\u91d1\u989d":56278387,"\u5356\u51fa\u91d1\u989d":32206544,"\u6210\u4ea4\u91d1\u989d":88484931},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2014-12-18 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.6,"\u6da8\u8dcc\u5e45":-0.23,"\u51c0\u4e70\u989d":109964199,"\u4e70\u5165\u91d1\u989d":134733966,"\u5356\u51fa\u91d1\u989d":24769767,"\u6210\u4ea4\u91d1\u989d":159503733},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-01-07 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":24.26,"\u6da8\u8dcc\u5e45":2.23,"\u51c0\u4e70\u989d":21384246,"\u4e70\u5165\u91d1\u989d":57440233,"\u5356\u51fa\u91d1\u989d":36055987,"\u6210\u4ea4\u91d1\u989d":93496220},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-01-13 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":26.01,"\u6da8\u8dcc\u5e45":1.05,"\u51c0\u4e70\u989d":6016580,"\u4e70\u5165\u91d1\u989d":33514049,"\u5356\u51fa\u91d1\u989d":27497469,"\u6210\u4ea4\u91d1\u989d":61011518},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-01-26 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":26.12,"\u6da8\u8dcc\u5e45":0.31,"\u51c0\u4e70\u989d":56117364,"\u4e70\u5165\u91d1\u989d":70813930,"\u5356\u51fa\u91d1\u989d":14696566,"\u6210\u4ea4\u91d1\u989d":85510496},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-01-28 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":26.5,"\u6da8\u8dcc\u5e45":-2.89,"\u51c0\u4e70\u989d":-24656068,"\u4e70\u5165\u91d1\u989d":114962745,"\u5356\u51fa\u91d1\u989d":139618813,"\u6210\u4ea4\u91d1\u989d":254581558},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-02-17 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":28.2,"\u6da8\u8dcc\u5e45":3.49,"\u51c0\u4e70\u989d":-47379153,"\u4e70\u5165\u91d1\u989d":18473529,"\u5356\u51fa\u91d1\u989d":65852682,"\u6210\u4ea4\u91d1\u989d":84326211},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-03-06 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":26.46,"\u6da8\u8dcc\u5e45":-2.15,"\u51c0\u4e70\u989d":-70320793,"\u4e70\u5165\u91d1\u989d":11769928,"\u5356\u51fa\u91d1\u989d":82090721,"\u6210\u4ea4\u91d1\u989d":93860649},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-04-09 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":31.45,"\u6da8\u8dcc\u5e45":-1.81,"\u51c0\u4e70\u989d":-28135624,"\u4e70\u5165\u91d1\u989d":121912442,"\u5356\u51fa\u91d1\u989d":150048066,"\u6210\u4ea4\u91d1\u989d":271960508},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-04-30 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":30.62,"\u6da8\u8dcc\u5e45":-1.7,"\u51c0\u4e70\u989d":-10131923,"\u4e70\u5165\u91d1\u989d":68475390,"\u5356\u51fa\u91d1\u989d":78607313,"\u6210\u4ea4\u91d1\u989d":147082703},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-05-26 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":24.5,"\u6da8\u8dcc\u5e45":5.38,"\u51c0\u4e70\u989d":337443009,"\u4e70\u5165\u91d1\u989d":372243822,"\u5356\u51fa\u91d1\u989d":34800813,"\u6210\u4ea4\u91d1\u989d":407044635},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-06-17 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.99,"\u6da8\u8dcc\u5e45":-0.86,"\u51c0\u4e70\u989d":-45885611,"\u4e70\u5165\u91d1\u989d":51135843,"\u5356\u51fa\u91d1\u989d":97021454,"\u6210\u4ea4\u91d1\u989d":148157297},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-07-17 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.01,"\u6da8\u8dcc\u5e45":3.57,"\u51c0\u4e70\u989d":-8898583,"\u4e70\u5165\u91d1\u989d":54805273,"\u5356\u51fa\u91d1\u989d":63703856,"\u6210\u4ea4\u91d1\u989d":118509129},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-07-21 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.37,"\u6da8\u8dcc\u5e45":2.36,"\u51c0\u4e70\u989d":-58566495,"\u4e70\u5165\u91d1\u989d":10016049,"\u5356\u51fa\u91d1\u989d":68582544,"\u6210\u4ea4\u91d1\u989d":78598593},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-07-22 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":19.77,"\u6da8\u8dcc\u5e45":-2.95,"\u51c0\u4e70\u989d":-64737585,"\u4e70\u5165\u91d1\u989d":11151890,"\u5356\u51fa\u91d1\u989d":75889475,"\u6210\u4ea4\u91d1\u989d":87041365},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-07-27 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":18.41,"\u6da8\u8dcc\u5e45":-6.64,"\u51c0\u4e70\u989d":104717845,"\u4e70\u5165\u91d1\u989d":136218810,"\u5356\u51fa\u91d1\u989d":31500965,"\u6210\u4ea4\u91d1\u989d":167719775},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-08-04 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.39,"\u6da8\u8dcc\u5e45":4.6,"\u51c0\u4e70\u989d":-124462993,"\u4e70\u5165\u91d1\u989d":30934416,"\u5356\u51fa\u91d1\u989d":155397409,"\u6210\u4ea4\u91d1\u989d":186331825},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-08-05 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.92,"\u6da8\u8dcc\u5e45":-2.2,"\u51c0\u4e70\u989d":-31606993,"\u4e70\u5165\u91d1\u989d":32041642,"\u5356\u51fa\u91d1\u989d":63648635,"\u6210\u4ea4\u91d1\u989d":95690277},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-08-06 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":22.18,"\u6da8\u8dcc\u5e45":6.02,"\u51c0\u4e70\u989d":-39727716,"\u4e70\u5165\u91d1\u989d":58719347,"\u5356\u51fa\u91d1\u989d":98447063,"\u6210\u4ea4\u91d1\u989d":157166410},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-08-07 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":22.03,"\u6da8\u8dcc\u5e45":-0.68,"\u51c0\u4e70\u989d":72216242,"\u4e70\u5165\u91d1\u989d":80733167,"\u5356\u51fa\u91d1\u989d":8516925,"\u6210\u4ea4\u91d1\u989d":89250092},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-08-12 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.21,"\u6da8\u8dcc\u5e45":-4.03,"\u51c0\u4e70\u989d":-82159314,"\u4e70\u5165\u91d1\u989d":7413105,"\u5356\u51fa\u91d1\u989d":89572419,"\u6210\u4ea4\u91d1\u989d":96985524},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-08-14 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.17,"\u6da8\u8dcc\u5e45":-1.58,"\u51c0\u4e70\u989d":-31442445,"\u4e70\u5165\u91d1\u989d":17631829,"\u5356\u51fa\u91d1\u989d":49074274,"\u6210\u4ea4\u91d1\u989d":66706103},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-08-24 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":17.11,"\u6da8\u8dcc\u5e45":-9.38,"\u51c0\u4e70\u989d":103864991,"\u4e70\u5165\u91d1\u989d":182235971,"\u5356\u51fa\u91d1\u989d":78370980,"\u6210\u4ea4\u91d1\u989d":260606951},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-09-07 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":17.53,"\u6da8\u8dcc\u5e45":-4.68,"\u51c0\u4e70\u989d":-68985961,"\u4e70\u5165\u91d1\u989d":12304505,"\u5356\u51fa\u91d1\u989d":81290466,"\u6210\u4ea4\u91d1\u989d":93594971},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-09-10 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":18.59,"\u6da8\u8dcc\u5e45":-0.32,"\u51c0\u4e70\u989d":-15169863,"\u4e70\u5165\u91d1\u989d":36922166,"\u5356\u51fa\u91d1\u989d":52092029,"\u6210\u4ea4\u91d1\u989d":89014195},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-09-30 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":18.8,"\u6da8\u8dcc\u5e45":2.4,"\u51c0\u4e70\u989d":38755886,"\u4e70\u5165\u91d1\u989d":40238570,"\u5356\u51fa\u91d1\u989d":1482684,"\u6210\u4ea4\u91d1\u989d":41721254},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-10-12 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":19.8,"\u6da8\u8dcc\u5e45":3.77,"\u51c0\u4e70\u989d":26050959,"\u4e70\u5165\u91d1\u989d":66935551,"\u5356\u51fa\u91d1\u989d":40884592,"\u6210\u4ea4\u91d1\u989d":107820143},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-10-27 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":22.19,"\u6da8\u8dcc\u5e45":2.54,"\u51c0\u4e70\u989d":96349392,"\u4e70\u5165\u91d1\u989d":124807738,"\u5356\u51fa\u91d1\u989d":28458346,"\u6210\u4ea4\u91d1\u989d":153266084},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-10-29 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.92,"\u6da8\u8dcc\u5e45":0.09,"\u51c0\u4e70\u989d":17318461,"\u4e70\u5165\u91d1\u989d":49018601,"\u5356\u51fa\u91d1\u989d":31700140,"\u6210\u4ea4\u91d1\u989d":80718741},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-10-30 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.92,"\u6da8\u8dcc\u5e45":0.0,"\u51c0\u4e70\u989d":1711889,"\u4e70\u5165\u91d1\u989d":64414830,"\u5356\u51fa\u91d1\u989d":62702941,"\u6210\u4ea4\u91d1\u989d":127117771},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-11-10 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":22.17,"\u6da8\u8dcc\u5e45":-0.36,"\u51c0\u4e70\u989d":-9597191,"\u4e70\u5165\u91d1\u989d":58263471,"\u5356\u51fa\u91d1\u989d":67860662,"\u6210\u4ea4\u91d1\u989d":126124133},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-11-16 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.99,"\u6da8\u8dcc\u5e45":-1.87,"\u51c0\u4e70\u989d":-10815505,"\u4e70\u5165\u91d1\u989d":48711101,"\u5356\u51fa\u91d1\u989d":59526606,"\u6210\u4ea4\u91d1\u989d":108237707},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-03 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.71,"\u6da8\u8dcc\u5e45":-0.73,"\u51c0\u4e70\u989d":10559455,"\u4e70\u5165\u91d1\u989d":65770139,"\u5356\u51fa\u91d1\u989d":55210684,"\u6210\u4ea4\u91d1\u989d":120980823},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-04 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.51,"\u6da8\u8dcc\u5e45":-0.92,"\u51c0\u4e70\u989d":41997543,"\u4e70\u5165\u91d1\u989d":50932772,"\u5356\u51fa\u91d1\u989d":8935229,"\u6210\u4ea4\u91d1\u989d":59868001},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-08 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.6,"\u6da8\u8dcc\u5e45":-4.23,"\u51c0\u4e70\u989d":-41228158,"\u4e70\u5165\u91d1\u989d":19543826,"\u5356\u51fa\u91d1\u989d":60771984,"\u6210\u4ea4\u91d1\u989d":80315810},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-09 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.77,"\u6da8\u8dcc\u5e45":0.83,"\u51c0\u4e70\u989d":41622160,"\u4e70\u5165\u91d1\u989d":50899437,"\u5356\u51fa\u91d1\u989d":9277277,"\u6210\u4ea4\u91d1\u989d":60176714},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-10 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.49,"\u6da8\u8dcc\u5e45":-1.35,"\u51c0\u4e70\u989d":-37515293,"\u4e70\u5165\u91d1\u989d":14746588,"\u5356\u51fa\u91d1\u989d":52261881,"\u6210\u4ea4\u91d1\u989d":67008469},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-14 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":20.98,"\u6da8\u8dcc\u5e45":1.75,"\u51c0\u4e70\u989d":14970399,"\u4e70\u5165\u91d1\u989d":28843579,"\u5356\u51fa\u91d1\u989d":13873180,"\u6210\u4ea4\u91d1\u989d":42716759},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-15 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.33,"\u6da8\u8dcc\u5e45":1.67,"\u51c0\u4e70\u989d":45267030,"\u4e70\u5165\u91d1\u989d":57670242,"\u5356\u51fa\u91d1\u989d":12403212,"\u6210\u4ea4\u91d1\u989d":70073454},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-18 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":21.8,"\u6da8\u8dcc\u5e45":2.35,"\u51c0\u4e70\u989d":85400495,"\u4e70\u5165\u91d1\u989d":99012473,"\u5356\u51fa\u91d1\u989d":13611978,"\u6210\u4ea4\u91d1\u989d":112624451},{"\u5e02\u573a":"\u4e0a\u6d77","\u65e5\u671f":"2015-12-21 00:00:00.000000","\u4ee3\u7801":"600066","\u540d\u79f0":"\u5b87\u901a\u5ba2\u8f66","\u6536\u76d8\u4ef7":22.74,"\u6da8\u8dcc\u5e45":4.31,"\u51c0\u4e70\u989d":35509305,"\u4e70\u5165\u91d1\u989d":72463562,"\u5356\u51fa\u91d1\u989d":36954257,"\u6210\u4ea4\u91d1\u989d":109417819}];
+           
+&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;html&lt;/span&gt;
+&amp;lt;div id=&amp;quot;container&amp;quot; style=&amp;quot;min-width: 310px; height: 400px; margin: 0 auto&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+
+&lt;div class="output_html rendered_html output_subarea "&gt;
+&lt;div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[8]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="nx"&gt;javascript&lt;/span&gt;
+&lt;span class="c1"&gt;// out has different data order from python input&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;format&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;%Y-%m-%d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pluck&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;日期&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="c1"&gt;// alert(date);&lt;/span&gt;
+&lt;span class="nx"&gt;date&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;slice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)});&lt;/span&gt;
+&lt;span class="c1"&gt;// data.forEach(function (d, index, array) {plot1.push(d.Age);});&lt;/span&gt;
+&lt;span class="c1"&gt;// format.parse(&amp;quot;2011-01-01&amp;quot;); // returns a Date&lt;/span&gt;
+&lt;span class="c1"&gt;//alert(date);&lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;#container&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;highcharts&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+        &lt;span class="nx"&gt;chart&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;column&amp;#39;&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;宇通客车&amp;#39;&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;subtitle&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;沪港通数据&amp;#39;&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;xAxis&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;categories&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;crosshair&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;yAxis&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="c1"&gt;//min: 0,&lt;/span&gt;
+            &lt;span class="nx"&gt;title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;金额&amp;#39;&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;tooltip&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;headerFormat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;span style=&amp;quot;font-size:10px&amp;quot;&amp;gt;{point.key}&amp;lt;/span&amp;gt;&amp;lt;table&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;pointFormat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;tr&amp;gt;&amp;lt;td style=&amp;quot;color:{series.color};padding:0&amp;quot;&amp;gt;{series.name}: &amp;lt;/td&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;
+                &lt;span class="s1"&gt;&amp;#39;&amp;lt;td style=&amp;quot;padding:0&amp;quot;&amp;gt;&amp;lt;b&amp;gt;{point.y:.1f} mm&amp;lt;/b&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;footerFormat&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;lt;/table&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;shared&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;useHTML&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;plotOptions&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;column&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+                &lt;span class="nx"&gt;pointPadding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0.2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+                &lt;span class="nx"&gt;borderWidth&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+            &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="p"&gt;},&lt;/span&gt;
+        &lt;span class="nx"&gt;series&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[{&lt;/span&gt;
+            &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;净买额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pluck&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;净买额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+        &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;买入金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pluck&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;买入金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+        &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;卖出金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pluck&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;卖出金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+        &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;成交金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pluck&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;成交金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+        &lt;span class="p"&gt;}]&lt;/span&gt;
+    &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_javascript "&gt;
+&lt;script type="text/javascript"&gt;
+// out has different data order from python input
+
+var format = d3.time.format("%Y-%m-%d");
+var date = _.pluck(out,'日期');
+// alert(date);
+date = $.map(date,function (d){return d.slice(0,10)});
+// data.forEach(function (d, index, array) {plot1.push(d.Age);});
+// format.parse("2011-01-01"); // returns a Date
+//alert(date);
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '宇通客车'
+        },
+        subtitle: {
+            text: '沪港通数据'
+        },
+        xAxis: {
+            categories: date,
+            crosshair: true
+        },
+        yAxis: {
+            //min: 0,
+            title: {
+                text: '金额'
+            }
+        },
+        tooltip: {
+            headerFormat: '&lt;span style="font-size:10px"&gt;{point.key}&lt;/span&gt;&lt;table&gt;',
+            pointFormat: '&lt;tr&gt;&lt;td style="color:{series.color};padding:0"&gt;{series.name}: &lt;/td&gt;' +
+                '&lt;td style="padding:0"&gt;&lt;b&gt;{point.y:.1f} mm&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;',
+            footerFormat: '&lt;/table&gt;',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '净买额',
+            data: _.pluck(out,'净买额')
+
+        }, {
+            name: '买入金额',
+            data: _.pluck(out,'买入金额')
+
+        }, {
+            name: '卖出金额',
+            data: _.pluck(out,'卖出金额')
+
+        }, {
+            name: '成交金额',
+            data: _.pluck(out,'成交金额')
+
+        }]
+    });
+});
+&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/p&gt;</summary><category term="python"></category><category term="javascript"></category><category term="website"></category></entry><entry><title>Thoughts on English and Chinese</title><link href="http://pathoflearning.com/blog/thoughts-on-english-chinese" rel="alternate"></link><updated>2015-11-09T14:14:00-05:00</updated><author><name>Qi Mi</name></author><id>tag:pathoflearning.com,2015-11-09:blog/thoughts-on-english-chinese</id><summary type="html">&lt;p&gt;Random Thoughts in English in comparison of Chinese (not in formal form yet, excuse for the
   grammar error and typo)&lt;/p&gt;
 &lt;p&gt;Think in more explicit way, have more
 contents, visualize the world, objects, action, more explicit expression.
