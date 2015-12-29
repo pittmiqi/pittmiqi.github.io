@@ -580,7 +580,7 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="nx">javascript</span>
@@ -593,10 +593,11 @@ a.back-to-top {
 <span class="c1">// data.forEach(function (d, index, array) {plot1.push(d.Age);});</span>
 <span class="c1">// format.parse(&quot;2011-01-01&quot;); // returns a Date</span>
 <span class="c1">//alert(date);</span>
-<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#container&#39;</span><span class="p">).</span><span class="nx">highcharts</span><span class="p">({</span>
+<span class="kd">var</span> <span class="nx">configure</span> <span class="o">=</span>  <span class="p">{</span>
+               
         <span class="nx">chart</span><span class="o">:</span> <span class="p">{</span>
-            <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;column&#39;</span>
+            <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;column&#39;</span><span class="p">,</span>
+            <span class="nx">renderTo</span><span class="o">:</span> <span class="s1">&#39;container&#39;</span>
         <span class="p">},</span>
         <span class="nx">title</span><span class="o">:</span> <span class="p">{</span>
             <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;宇通客车&#39;</span>
@@ -645,8 +646,9 @@ a.back-to-top {
             <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">pluck</span><span class="p">(</span><span class="nx">out</span><span class="p">,</span><span class="s1">&#39;成交金额&#39;</span><span class="p">)</span>
 
         <span class="p">}]</span>
-    <span class="p">});</span>
-<span class="p">});</span>
+    <span class="p">};</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span><span class="kd">var</span> <span class="nx">chart1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Highcharts</span><span class="p">.</span><span class="nx">chart</span><span class="p">(</span><span class="nx">configure</span><span class="p">)});</span>
 </pre></div>
 
 </div>
@@ -671,10 +673,11 @@ date = $.map(date,function (d){return d.slice(0,10)});
 // data.forEach(function (d, index, array) {plot1.push(d.Age);});
 // format.parse("2011-01-01"); // returns a Date
 //alert(date);
-$(function () {
-    $('#container').highcharts({
+var configure =  {
+               
         chart: {
-            type: 'column'
+            type: 'column',
+            renderTo: 'container'
         },
         title: {
             text: '宇通客车'
@@ -723,8 +726,10 @@ $(function () {
             data: _.pluck(out,'成交金额')
 
         }]
-    });
-});
+    };
+
+$(function () {var chart1 = new Highcharts.chart(configure)});
+
 </script>
 </div>
 
