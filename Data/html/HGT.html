@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="http://www.pitt.edu/~qim3/js/keen-dashboards.css" rel ="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.css" rel="stylesheet" type="text/css">
+<script src="http://www.pitt.edu/~qim3/js/jquery-ui-new.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+<script src="http://www.pitt.edu/~qim3/js/test.js"> </script>
+<script src= "http://www.pitt.edu/~qim3/js/c3-new.js"> </script>
+<script src="http://www.pitt.edu/~qim3/js/dc-new.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+
+<body>
+
+  <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  <script>
+
+
+  $.getJSON( "test.js", function( json ) {
+   out = json;  
+   });
+var date = _.pluck(out,'日期');
+// alert(date);
+date = $.map(date,function (d){return d.slice(0,10)});
+// data.forEach(function (d, index, array) {plot1.push(d.Age);});
+// format.parse("2011-01-01"); // returns a Date
+//alert(date);
+var configure =  {
+
+        chart: {
+            type: 'column',
+            renderTo: 'container'
+        },
+        title: {
+            text: '宇通客车'
+        },
+        subtitle: {
+            text: '沪港通数据'
+        },
+        xAxis: {
+            categories: date,
+            crosshair: true
+
+        },
+        yAxis: {
+            //min: 0,
+            title: {
+                text: '金额'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '净买额',
+            data: _.pluck(out,'净买额')
+
+        }, {
+            name: '买入金额',
+            data: _.pluck(out,'买入金额')
+
+        }, {
+            name: '卖出金额',
+            data: _.pluck(out,'卖出金额')
+
+        }, {
+            name: '成交金额',
+            data: _.pluck(out,'成交金额')
+
+        }]
+    };
+
+$(function () {var chart1 = new Highcharts.chart(configure)});
+
+  </script>
+</body>
