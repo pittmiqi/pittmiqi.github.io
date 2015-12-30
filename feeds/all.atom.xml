@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Path of Learning - 書路</title><link href="http://pathoflearning.com/" rel="alternate"></link><link href="http://pathoflearning.com/feeds/all.atom.xml" rel="self"></link><id>http://pathoflearning.com/</id><updated>2015-12-29T21:00:00-05:00</updated><entry><title>A Demo for using Javascript as Front-end in Ipython Notebook(2)</title><link href="http://pathoflearning.com/blog/javascript-front-end-ipython-notebook(2)" rel="alternate"></link><updated>2015-12-29T21:00:00-05:00</updated><author><name>Qi Mi</name></author><id>tag:pathoflearning.com,2015-12-29:blog/javascript-front-end-ipython-notebook(2)</id><summary type="html">&lt;p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Path of Learning - 書路</title><link href="http://pathoflearning.com/" rel="alternate"></link><link href="http://pathoflearning.com/feeds/all.atom.xml" rel="self"></link><id>http://pathoflearning.com/</id><updated>2015-12-29T21:00:00-05:00</updated><entry><title>A Demo for using Javascript as Front-end in Ipython Notebook(2)</title><link href="http://pathoflearning.com/blog/javascript-front-end-ipython-notebook(2)" rel="alternate"></link><updated>2015-12-29T21:00:00-05:00</updated><author><name>Qi Mi</name></author><id>tag:pathoflearning.com,2015-12-29:blog/javascript-front-end-ipython-notebook(2)</id><summary type="html">&lt;style type="text/css"&gt;
+.input_prompt, .input_area, .output_prompt {
+    display:none !important; }
+ &lt;/style&gt;
+
+&lt;p&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[14]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;html&lt;/span&gt;
@@ -55,7 +60,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[15]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
@@ -72,7 +77,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[16]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sqlite3&lt;/span&gt;
@@ -93,7 +98,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[17]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="n"&gt;SH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;市场&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;上海&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -109,7 +114,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[18]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="c"&gt;## output HGT data to text file&lt;/span&gt;
@@ -126,416 +131,42 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[31]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="n"&gt;tail&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;名称&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;data_late&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;by&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;名称&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data_late&lt;/span&gt;
+&lt;span class="n"&gt;data_late&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;tail&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;名称&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;data_late10&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tail&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;by&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;名称&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data_late&lt;/span&gt;
+&lt;span class="n"&gt;data_late&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[31]:&lt;/div&gt;
-
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-  &lt;thead&gt;
-    &lt;tr style="text-align: right;"&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;收盘价&lt;/th&gt;
-      &lt;th&gt;涨跌幅&lt;/th&gt;
-      &lt;th&gt;净买额&lt;/th&gt;
-      &lt;th&gt;买入金额&lt;/th&gt;
-      &lt;th&gt;卖出金额&lt;/th&gt;
-      &lt;th&gt;成交金额&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;名称&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th&gt;上海机场&lt;/th&gt;
-      &lt;td&gt;92.53&lt;/td&gt;
-      &lt;td&gt;-1.35&lt;/td&gt;
-      &lt;td&gt;-163131088&lt;/td&gt;
-      &lt;td&gt;223494282&lt;/td&gt;
-      &lt;td&gt;386625370&lt;/td&gt;
-      &lt;td&gt;610119652&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;上海电气&lt;/th&gt;
-      &lt;td&gt;12.43&lt;/td&gt;
-      &lt;td&gt;0.08&lt;/td&gt;
-      &lt;td&gt;-69238068&lt;/td&gt;
-      &lt;td&gt;2564235&lt;/td&gt;
-      &lt;td&gt;71802303&lt;/td&gt;
-      &lt;td&gt;74366538&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;上海贝岭&lt;/th&gt;
-      &lt;td&gt;21.76&lt;/td&gt;
-      &lt;td&gt;-0.18&lt;/td&gt;
-      &lt;td&gt;-43536062&lt;/td&gt;
-      &lt;td&gt;2236805&lt;/td&gt;
-      &lt;td&gt;45772867&lt;/td&gt;
-      &lt;td&gt;48009672&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;中信证券&lt;/th&gt;
-      &lt;td&gt;80.45&lt;/td&gt;
-      &lt;td&gt;3.01&lt;/td&gt;
-      &lt;td&gt;20147257&lt;/td&gt;
-      &lt;td&gt;206379266&lt;/td&gt;
-      &lt;td&gt;186232009&lt;/td&gt;
-      &lt;td&gt;392611275&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;中国太保&lt;/th&gt;
-      &lt;td&gt;29.59&lt;/td&gt;
-      &lt;td&gt;1.13&lt;/td&gt;
-      &lt;td&gt;-82868951&lt;/td&gt;
-      &lt;td&gt;2249433&lt;/td&gt;
-      &lt;td&gt;85118384&lt;/td&gt;
-      &lt;td&gt;87367817&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;中国平安&lt;/th&gt;
-      &lt;td&gt;182.66&lt;/td&gt;
-      &lt;td&gt;1.33&lt;/td&gt;
-      &lt;td&gt;-445152908&lt;/td&gt;
-      &lt;td&gt;206491855&lt;/td&gt;
-      &lt;td&gt;651644763&lt;/td&gt;
-      &lt;td&gt;858136618&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;中国建筑&lt;/th&gt;
-      &lt;td&gt;6.46&lt;/td&gt;
-      &lt;td&gt;0.94&lt;/td&gt;
-      &lt;td&gt;30238418&lt;/td&gt;
-      &lt;td&gt;35745770&lt;/td&gt;
-      &lt;td&gt;5507352&lt;/td&gt;
-      &lt;td&gt;41253122&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;乐凯胶片&lt;/th&gt;
-      &lt;td&gt;22.11&lt;/td&gt;
-      &lt;td&gt;2.46&lt;/td&gt;
-      &lt;td&gt;37973176&lt;/td&gt;
-      &lt;td&gt;39385285&lt;/td&gt;
-      &lt;td&gt;1412109&lt;/td&gt;
-      &lt;td&gt;40797394&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;亚泰集团&lt;/th&gt;
-      &lt;td&gt;7.43&lt;/td&gt;
-      &lt;td&gt;1.64&lt;/td&gt;
-      &lt;td&gt;-82373182&lt;/td&gt;
-      &lt;td&gt;709665&lt;/td&gt;
-      &lt;td&gt;83082847&lt;/td&gt;
-      &lt;td&gt;83792512&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;伊利股份&lt;/th&gt;
-      &lt;td&gt;70.70&lt;/td&gt;
-      &lt;td&gt;8.76&lt;/td&gt;
-      &lt;td&gt;-695670046&lt;/td&gt;
-      &lt;td&gt;94317231&lt;/td&gt;
-      &lt;td&gt;789987277&lt;/td&gt;
-      &lt;td&gt;884304508&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;保利地产&lt;/th&gt;
-      &lt;td&gt;22.68&lt;/td&gt;
-      &lt;td&gt;-6.17&lt;/td&gt;
-      &lt;td&gt;-56782977&lt;/td&gt;
-      &lt;td&gt;77896828&lt;/td&gt;
-      &lt;td&gt;134679805&lt;/td&gt;
-      &lt;td&gt;212576633&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;南方航空&lt;/th&gt;
-      &lt;td&gt;17.69&lt;/td&gt;
-      &lt;td&gt;2.06&lt;/td&gt;
-      &lt;td&gt;39906171&lt;/td&gt;
-      &lt;td&gt;73018308&lt;/td&gt;
-      &lt;td&gt;33112137&lt;/td&gt;
-      &lt;td&gt;106130445&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;城投控股&lt;/th&gt;
-      &lt;td&gt;46.10&lt;/td&gt;
-      &lt;td&gt;-9.04&lt;/td&gt;
-      &lt;td&gt;11580391&lt;/td&gt;
-      &lt;td&gt;68616448&lt;/td&gt;
-      &lt;td&gt;57036057&lt;/td&gt;
-      &lt;td&gt;125652505&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;宇通客车&lt;/th&gt;
-      &lt;td&gt;22.74&lt;/td&gt;
-      &lt;td&gt;4.31&lt;/td&gt;
-      &lt;td&gt;35509305&lt;/td&gt;
-      &lt;td&gt;72463562&lt;/td&gt;
-      &lt;td&gt;36954257&lt;/td&gt;
-      &lt;td&gt;109417819&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;安信信托&lt;/th&gt;
-      &lt;td&gt;38.81&lt;/td&gt;
-      &lt;td&gt;-0.87&lt;/td&gt;
-      &lt;td&gt;183536597&lt;/td&gt;
-      &lt;td&gt;191126747&lt;/td&gt;
-      &lt;td&gt;7590150&lt;/td&gt;
-      &lt;td&gt;198716897&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;工商银行&lt;/th&gt;
-      &lt;td&gt;4.61&lt;/td&gt;
-      &lt;td&gt;0.44&lt;/td&gt;
-      &lt;td&gt;34193248&lt;/td&gt;
-      &lt;td&gt;38855286&lt;/td&gt;
-      &lt;td&gt;4662038&lt;/td&gt;
-      &lt;td&gt;43517324&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;张江高科&lt;/th&gt;
-      &lt;td&gt;31.28&lt;/td&gt;
-      &lt;td&gt;4.44&lt;/td&gt;
-      &lt;td&gt;61263346&lt;/td&gt;
-      &lt;td&gt;67738236&lt;/td&gt;
-      &lt;td&gt;6474890&lt;/td&gt;
-      &lt;td&gt;74213126&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;恒生电子&lt;/th&gt;
-      &lt;td&gt;127.13&lt;/td&gt;
-      &lt;td&gt;-5.66&lt;/td&gt;
-      &lt;td&gt;-7674549&lt;/td&gt;
-      &lt;td&gt;68672401&lt;/td&gt;
-      &lt;td&gt;76346950&lt;/td&gt;
-      &lt;td&gt;145019351&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;新华保险&lt;/th&gt;
-      &lt;td&gt;109.50&lt;/td&gt;
-      &lt;td&gt;6.17&lt;/td&gt;
-      &lt;td&gt;-122865377&lt;/td&gt;
-      &lt;td&gt;42044764&lt;/td&gt;
-      &lt;td&gt;164910141&lt;/td&gt;
-      &lt;td&gt;206954905&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;杉杉股份&lt;/th&gt;
-      &lt;td&gt;39.64&lt;/td&gt;
-      &lt;td&gt;9.99&lt;/td&gt;
-      &lt;td&gt;-2866847&lt;/td&gt;
-      &lt;td&gt;24486796&lt;/td&gt;
-      &lt;td&gt;27353643&lt;/td&gt;
-      &lt;td&gt;51840439&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;永辉超市&lt;/th&gt;
-      &lt;td&gt;20.77&lt;/td&gt;
-      &lt;td&gt;3.32&lt;/td&gt;
-      &lt;td&gt;15376747&lt;/td&gt;
-      &lt;td&gt;116542950&lt;/td&gt;
-      &lt;td&gt;101166203&lt;/td&gt;
-      &lt;td&gt;217709153&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;海螺水泥&lt;/th&gt;
-      &lt;td&gt;17.94&lt;/td&gt;
-      &lt;td&gt;2.75&lt;/td&gt;
-      &lt;td&gt;-46190635&lt;/td&gt;
-      &lt;td&gt;55035529&lt;/td&gt;
-      &lt;td&gt;101226164&lt;/td&gt;
-      &lt;td&gt;156261693&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;海通证券&lt;/th&gt;
-      &lt;td&gt;32.23&lt;/td&gt;
-      &lt;td&gt;-4.23&lt;/td&gt;
-      &lt;td&gt;-77655946&lt;/td&gt;
-      &lt;td&gt;34954188&lt;/td&gt;
-      &lt;td&gt;112610134&lt;/td&gt;
-      &lt;td&gt;147564322&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;贵州茅台&lt;/th&gt;
-      &lt;td&gt;891.01&lt;/td&gt;
-      &lt;td&gt;1.72&lt;/td&gt;
-      &lt;td&gt;-56396821&lt;/td&gt;
-      &lt;td&gt;284161807&lt;/td&gt;
-      &lt;td&gt;340558628&lt;/td&gt;
-      &lt;td&gt;624720435&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;金地集团&lt;/th&gt;
-      &lt;td&gt;14.48&lt;/td&gt;
-      &lt;td&gt;-5.42&lt;/td&gt;
-      &lt;td&gt;-23166645&lt;/td&gt;
-      &lt;td&gt;10601647&lt;/td&gt;
-      &lt;td&gt;33768292&lt;/td&gt;
-      &lt;td&gt;44369939&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;风帆股份&lt;/th&gt;
-      &lt;td&gt;99.92&lt;/td&gt;
-      &lt;td&gt;5.84&lt;/td&gt;
-      &lt;td&gt;-96574971&lt;/td&gt;
-      &lt;td&gt;54102772&lt;/td&gt;
-      &lt;td&gt;150677743&lt;/td&gt;
-      &lt;td&gt;204780515&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[20]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="n"&gt;yutong&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;名称&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;宇通客车&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="n"&gt;yutong&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;yutong&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;日期&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;yutong&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;yutong&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[20]:&lt;/div&gt;
-
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;div&gt;
-&lt;table border="1" class="dataframe"&gt;
-  &lt;thead&gt;
-    &lt;tr style="text-align: right;"&gt;
-      &lt;th&gt;&lt;/th&gt;
-      &lt;th&gt;市场&lt;/th&gt;
-      &lt;th&gt;日期&lt;/th&gt;
-      &lt;th&gt;代码&lt;/th&gt;
-      &lt;th&gt;名称&lt;/th&gt;
-      &lt;th&gt;收盘价&lt;/th&gt;
-      &lt;th&gt;涨跌幅&lt;/th&gt;
-      &lt;th&gt;净买额&lt;/th&gt;
-      &lt;th&gt;买入金额&lt;/th&gt;
-      &lt;th&gt;卖出金额&lt;/th&gt;
-      &lt;th&gt;成交金额&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th&gt;5417&lt;/th&gt;
-      &lt;td&gt;上海&lt;/td&gt;
-      &lt;td&gt;2014-11-28 00:00:00.000000&lt;/td&gt;
-      &lt;td&gt;600066&lt;/td&gt;
-      &lt;td&gt;宇通客车&lt;/td&gt;
-      &lt;td&gt;18.67&lt;/td&gt;
-      &lt;td&gt;-0.37&lt;/td&gt;
-      &lt;td&gt;205870534&lt;/td&gt;
-      &lt;td&gt;206029384&lt;/td&gt;
-      &lt;td&gt;158850&lt;/td&gt;
-      &lt;td&gt;206188234&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;5329&lt;/th&gt;
-      &lt;td&gt;上海&lt;/td&gt;
-      &lt;td&gt;2014-12-05 00:00:00.000000&lt;/td&gt;
-      &lt;td&gt;600066&lt;/td&gt;
-      &lt;td&gt;宇通客车&lt;/td&gt;
-      &lt;td&gt;20.52&lt;/td&gt;
-      &lt;td&gt;3.43&lt;/td&gt;
-      &lt;td&gt;212824752&lt;/td&gt;
-      &lt;td&gt;230059195&lt;/td&gt;
-      &lt;td&gt;17234443&lt;/td&gt;
-      &lt;td&gt;247293638&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;5308&lt;/th&gt;
-      &lt;td&gt;上海&lt;/td&gt;
-      &lt;td&gt;2014-12-08 00:00:00.000000&lt;/td&gt;
-      &lt;td&gt;600066&lt;/td&gt;
-      &lt;td&gt;宇通客车&lt;/td&gt;
-      &lt;td&gt;21.08&lt;/td&gt;
-      &lt;td&gt;2.73&lt;/td&gt;
-      &lt;td&gt;125841391&lt;/td&gt;
-      &lt;td&gt;164212401&lt;/td&gt;
-      &lt;td&gt;38371010&lt;/td&gt;
-      &lt;td&gt;202583412&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;5287&lt;/th&gt;
-      &lt;td&gt;上海&lt;/td&gt;
-      &lt;td&gt;2014-12-09 00:00:00.000000&lt;/td&gt;
-      &lt;td&gt;600066&lt;/td&gt;
-      &lt;td&gt;宇通客车&lt;/td&gt;
-      &lt;td&gt;20.98&lt;/td&gt;
-      &lt;td&gt;-0.47&lt;/td&gt;
-      &lt;td&gt;233476417&lt;/td&gt;
-      &lt;td&gt;242712234&lt;/td&gt;
-      &lt;td&gt;9235817&lt;/td&gt;
-      &lt;td&gt;251948051&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th&gt;5264&lt;/th&gt;
-      &lt;td&gt;上海&lt;/td&gt;
-      &lt;td&gt;2014-12-10 00:00:00.000000&lt;/td&gt;
-      &lt;td&gt;600066&lt;/td&gt;
-      &lt;td&gt;宇通客车&lt;/td&gt;
-      &lt;td&gt;22.42&lt;/td&gt;
-      &lt;td&gt;6.86&lt;/td&gt;
-      &lt;td&gt;82719826&lt;/td&gt;
-      &lt;td&gt;140461013&lt;/td&gt;
-      &lt;td&gt;57741187&lt;/td&gt;
-      &lt;td&gt;198202201&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[32]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.display&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Javascript&lt;/span&gt;
@@ -560,7 +191,7 @@
 &lt;div class="output"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[32]:&lt;/div&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[8]:&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_javascript output_execute_result"&gt;
@@ -579,7 +210,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[26]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="n"&gt;Javascript&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
@@ -595,7 +226,7 @@
 &lt;div class="output"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[26]:&lt;/div&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_javascript output_execute_result"&gt;
@@ -614,7 +245,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[33]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="n"&gt;Javascript&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
@@ -630,7 +261,7 @@
 &lt;div class="output"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[33]:&lt;/div&gt;
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[10]:&lt;/div&gt;
 
 
 &lt;div class="output_subarea output_javascript output_execute_result"&gt;
@@ -649,7 +280,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[22]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;html&lt;/span&gt;
@@ -678,7 +309,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[23]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[12]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;html&lt;/span&gt;
@@ -707,7 +338,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[34]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[13]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="k"&gt;html&lt;/span&gt;
@@ -736,7 +367,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[29]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[14]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="nx"&gt;javascript&lt;/span&gt;
@@ -897,7 +528,7 @@ $(function () {var chart1 = new Highcharts.chart(configure)});
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[30]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[15]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="nx"&gt;javascript&lt;/span&gt;
@@ -911,7 +542,7 @@ $(function () {var chart1 = new Highcharts.chart(configure)});
 &lt;span class="c1"&gt;// data.forEach(function (d, index, array) {plot1.push(d.Age);});&lt;/span&gt;
 &lt;span class="c1"&gt;// format.parse(&amp;quot;2011-01-01&amp;quot;); // returns a Date&lt;/span&gt;
 &lt;span class="c1"&gt;//alert(date);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;configure&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;  &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;configure2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;  &lt;span class="p"&gt;{&lt;/span&gt;
                
         &lt;span class="nx"&gt;chart&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
             &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;column&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -966,7 +597,7 @@ $(function () {var chart1 = new Highcharts.chart(configure)});
         &lt;span class="p"&gt;}]&lt;/span&gt;
     &lt;span class="p"&gt;};&lt;/span&gt;
 
-&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;chart2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Highcharts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;configure&lt;/span&gt;&lt;span class="p"&gt;)});&lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;chart2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Highcharts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;configure2&lt;/span&gt;&lt;span class="p"&gt;)});&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -992,7 +623,7 @@ var name = _.keys(out2.涨跌幅);
 // data.forEach(function (d, index, array) {plot1.push(d.Age);});
 // format.parse("2011-01-01"); // returns a Date
 //alert(date);
-var configure =  {
+var configure2 =  {
                
         chart: {
             type: 'column',
@@ -1047,7 +678,7 @@ var configure =  {
         }]
     };
 
-$(function () {var chart2 = new Highcharts.chart(configure)});
+$(function () {var chart2 = new Highcharts.chart(configure2)});
 &lt;/script&gt;
 &lt;/div&gt;
 
@@ -1059,21 +690,15 @@ $(function () {var chart2 = new Highcharts.chart(configure)});
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[36]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[16]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="nx"&gt;javascript&lt;/span&gt;
 &lt;span class="c1"&gt;// out has different data order from python input&lt;/span&gt;
-&lt;span class="nx"&gt;out2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;out10&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;format&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;time&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;%Y-%m-%d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;keys&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;涨跌幅&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;keys&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;涨跌幅&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
     
-&lt;span class="c1"&gt;// alert(date);&lt;/span&gt;
-&lt;span class="c1"&gt;// date = $.map(date,function (d){return d.slice(0,10)});&lt;/span&gt;
-&lt;span class="c1"&gt;// data.forEach(function (d, index, array) {plot1.push(d.Age);});&lt;/span&gt;
-&lt;span class="c1"&gt;// format.parse(&amp;quot;2011-01-01&amp;quot;); // returns a Date&lt;/span&gt;
-&lt;span class="c1"&gt;//alert(date);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;configure&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;  &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;configure3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;  &lt;span class="p"&gt;{&lt;/span&gt;
                
         &lt;span class="nx"&gt;chart&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
             &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;column&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -1111,24 +736,24 @@ $(function () {var chart2 = new Highcharts.chart(configure)});
         &lt;span class="p"&gt;},&lt;/span&gt;
         &lt;span class="nx"&gt;series&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[{&lt;/span&gt;
             &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;净买额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;净买额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;净买额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
         &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
             &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;买入金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;买入金额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;买入金额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
         &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
             &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;卖出金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;卖出金额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;卖出金额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
         &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
             &lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;成交金额&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;成交金额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;_&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;out10&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;成交金额&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
         &lt;span class="p"&gt;}]&lt;/span&gt;
     &lt;span class="p"&gt;};&lt;/span&gt;
 
-&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;chart2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Highcharts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;configure&lt;/span&gt;&lt;span class="p"&gt;)});&lt;/span&gt;
+&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;chart3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Highcharts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;configure3&lt;/span&gt;&lt;span class="p"&gt;)});&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -1145,16 +770,10 @@ $(function () {var chart2 = new Highcharts.chart(configure)});
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
 // out has different data order from python input
-out2 = out10
-var format = d3.time.format("%Y-%m-%d");
-var name = _.keys(out2.涨跌幅);
+
+var name = _.keys(out10.涨跌幅);
     
-// alert(date);
-// date = $.map(date,function (d){return d.slice(0,10)});
-// data.forEach(function (d, index, array) {plot1.push(d.Age);});
-// format.parse("2011-01-01"); // returns a Date
-//alert(date);
-var configure =  {
+var configure3 =  {
                
         chart: {
             type: 'column',
@@ -1192,24 +811,24 @@ var configure =  {
         },
         series: [{
             name: '净买额',
-            data: _.values(out2.净买额)
+            data: _.values(out10.净买额)
 
         }, {
             name: '买入金额',
-            data: _.values(out2.买入金额)
+            data: _.values(out10.买入金额)
 
         }, {
             name: '卖出金额',
-            data: _.values(out2.卖出金额)
+            data: _.values(out10.卖出金额)
 
         }, {
             name: '成交金额',
-            data: _.values(out2.成交金额)
+            data: _.values(out10.成交金额)
 
         }]
     };
 
-$(function () {var chart2 = new Highcharts.chart(configure)});
+$(function () {var chart3 = new Highcharts.chart(configure3)});
 &lt;/script&gt;
 &lt;/div&gt;
 
