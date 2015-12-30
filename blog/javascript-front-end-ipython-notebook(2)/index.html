@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>A Demo for using Javascript as Front-end in Ipython Notebook - Path of Learning - 書路</title>
+    <title>A Demo for using Javascript as Front-end in Ipython Notebook(2) - Path of Learning - 書路</title>
       <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -273,7 +273,7 @@ a.back-to-top {
       </div>
       <div class="container">
           <div class="post-date pull-right">2015.12.29</div>
-          <h2 class="post-header">A Demo for using Javascript as Front-end in Ipython Notebook</h2>
+          <h2 class="post-header">A Demo for using Javascript as Front-end in Ipython Notebook(2)</h2>
           <div class="post-metadata pull-right">
             <a href="http://pathoflearning.com/tag/python"><b>@</b>python</a>
             <a href="http://pathoflearning.com/tag/javascript"><b>@</b>javascript</a>
@@ -282,7 +282,7 @@ a.back-to-top {
             <p>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -335,7 +335,7 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -352,7 +352,7 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">sqlite3</span>
@@ -373,13 +373,26 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">SH</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">市场</span> <span class="o">==</span> <span class="s">&#39;上海&#39;</span><span class="p">]</span>
 <span class="n">SH</span> <span class="o">=</span> <span class="n">SH</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s">&#39;id&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c"># remove id column</span>
 <span class="n">SH</span> <span class="o">=</span> <span class="n">SH</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span> <span class="c"># remove the duplicates</span>
 <span class="n">SH</span> <span class="o">=</span> <span class="n">SH</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="s">&#39;日期&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c">## output HGT data to text file</span>
 <span class="n">SH_output</span> <span class="o">=</span> <span class="n">SH</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s">&#39;records&#39;</span><span class="p">,</span> <span class="n">date_unit</span><span class="o">=</span><span class="s">&#39;s&#39;</span><span class="p">)</span>
 <span class="n">text_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;HGT_JSON.txt&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span>
 <span class="n">text_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">SH_output</span><span class="p">)</span>
@@ -393,7 +406,301 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">tail</span> <span class="o">=</span> <span class="n">SH</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+<span class="nb">set</span><span class="p">(</span><span class="n">tail</span><span class="p">[</span><span class="s">&quot;名称&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">data_late</span> <span class="o">=</span> <span class="n">tail</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;名称&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">data_late</span>
+<span class="n">tail</span> <span class="o">=</span> <span class="n">SH</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="nb">set</span><span class="p">(</span><span class="n">tail</span><span class="p">[</span><span class="s">&quot;名称&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">data_late10</span> <span class="o">=</span> <span class="n">tail</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;名称&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">data_late</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>收盘价</th>
+      <th>涨跌幅</th>
+      <th>净买额</th>
+      <th>买入金额</th>
+      <th>卖出金额</th>
+      <th>成交金额</th>
+    </tr>
+    <tr>
+      <th>名称</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>上海机场</th>
+      <td>92.53</td>
+      <td>-1.35</td>
+      <td>-163131088</td>
+      <td>223494282</td>
+      <td>386625370</td>
+      <td>610119652</td>
+    </tr>
+    <tr>
+      <th>上海电气</th>
+      <td>12.43</td>
+      <td>0.08</td>
+      <td>-69238068</td>
+      <td>2564235</td>
+      <td>71802303</td>
+      <td>74366538</td>
+    </tr>
+    <tr>
+      <th>上海贝岭</th>
+      <td>21.76</td>
+      <td>-0.18</td>
+      <td>-43536062</td>
+      <td>2236805</td>
+      <td>45772867</td>
+      <td>48009672</td>
+    </tr>
+    <tr>
+      <th>中信证券</th>
+      <td>80.45</td>
+      <td>3.01</td>
+      <td>20147257</td>
+      <td>206379266</td>
+      <td>186232009</td>
+      <td>392611275</td>
+    </tr>
+    <tr>
+      <th>中国太保</th>
+      <td>29.59</td>
+      <td>1.13</td>
+      <td>-82868951</td>
+      <td>2249433</td>
+      <td>85118384</td>
+      <td>87367817</td>
+    </tr>
+    <tr>
+      <th>中国平安</th>
+      <td>182.66</td>
+      <td>1.33</td>
+      <td>-445152908</td>
+      <td>206491855</td>
+      <td>651644763</td>
+      <td>858136618</td>
+    </tr>
+    <tr>
+      <th>中国建筑</th>
+      <td>6.46</td>
+      <td>0.94</td>
+      <td>30238418</td>
+      <td>35745770</td>
+      <td>5507352</td>
+      <td>41253122</td>
+    </tr>
+    <tr>
+      <th>乐凯胶片</th>
+      <td>22.11</td>
+      <td>2.46</td>
+      <td>37973176</td>
+      <td>39385285</td>
+      <td>1412109</td>
+      <td>40797394</td>
+    </tr>
+    <tr>
+      <th>亚泰集团</th>
+      <td>7.43</td>
+      <td>1.64</td>
+      <td>-82373182</td>
+      <td>709665</td>
+      <td>83082847</td>
+      <td>83792512</td>
+    </tr>
+    <tr>
+      <th>伊利股份</th>
+      <td>70.70</td>
+      <td>8.76</td>
+      <td>-695670046</td>
+      <td>94317231</td>
+      <td>789987277</td>
+      <td>884304508</td>
+    </tr>
+    <tr>
+      <th>保利地产</th>
+      <td>22.68</td>
+      <td>-6.17</td>
+      <td>-56782977</td>
+      <td>77896828</td>
+      <td>134679805</td>
+      <td>212576633</td>
+    </tr>
+    <tr>
+      <th>南方航空</th>
+      <td>17.69</td>
+      <td>2.06</td>
+      <td>39906171</td>
+      <td>73018308</td>
+      <td>33112137</td>
+      <td>106130445</td>
+    </tr>
+    <tr>
+      <th>城投控股</th>
+      <td>46.10</td>
+      <td>-9.04</td>
+      <td>11580391</td>
+      <td>68616448</td>
+      <td>57036057</td>
+      <td>125652505</td>
+    </tr>
+    <tr>
+      <th>宇通客车</th>
+      <td>22.74</td>
+      <td>4.31</td>
+      <td>35509305</td>
+      <td>72463562</td>
+      <td>36954257</td>
+      <td>109417819</td>
+    </tr>
+    <tr>
+      <th>安信信托</th>
+      <td>38.81</td>
+      <td>-0.87</td>
+      <td>183536597</td>
+      <td>191126747</td>
+      <td>7590150</td>
+      <td>198716897</td>
+    </tr>
+    <tr>
+      <th>工商银行</th>
+      <td>4.61</td>
+      <td>0.44</td>
+      <td>34193248</td>
+      <td>38855286</td>
+      <td>4662038</td>
+      <td>43517324</td>
+    </tr>
+    <tr>
+      <th>张江高科</th>
+      <td>31.28</td>
+      <td>4.44</td>
+      <td>61263346</td>
+      <td>67738236</td>
+      <td>6474890</td>
+      <td>74213126</td>
+    </tr>
+    <tr>
+      <th>恒生电子</th>
+      <td>127.13</td>
+      <td>-5.66</td>
+      <td>-7674549</td>
+      <td>68672401</td>
+      <td>76346950</td>
+      <td>145019351</td>
+    </tr>
+    <tr>
+      <th>新华保险</th>
+      <td>109.50</td>
+      <td>6.17</td>
+      <td>-122865377</td>
+      <td>42044764</td>
+      <td>164910141</td>
+      <td>206954905</td>
+    </tr>
+    <tr>
+      <th>杉杉股份</th>
+      <td>39.64</td>
+      <td>9.99</td>
+      <td>-2866847</td>
+      <td>24486796</td>
+      <td>27353643</td>
+      <td>51840439</td>
+    </tr>
+    <tr>
+      <th>永辉超市</th>
+      <td>20.77</td>
+      <td>3.32</td>
+      <td>15376747</td>
+      <td>116542950</td>
+      <td>101166203</td>
+      <td>217709153</td>
+    </tr>
+    <tr>
+      <th>海螺水泥</th>
+      <td>17.94</td>
+      <td>2.75</td>
+      <td>-46190635</td>
+      <td>55035529</td>
+      <td>101226164</td>
+      <td>156261693</td>
+    </tr>
+    <tr>
+      <th>海通证券</th>
+      <td>32.23</td>
+      <td>-4.23</td>
+      <td>-77655946</td>
+      <td>34954188</td>
+      <td>112610134</td>
+      <td>147564322</td>
+    </tr>
+    <tr>
+      <th>贵州茅台</th>
+      <td>891.01</td>
+      <td>1.72</td>
+      <td>-56396821</td>
+      <td>284161807</td>
+      <td>340558628</td>
+      <td>624720435</td>
+    </tr>
+    <tr>
+      <th>金地集团</th>
+      <td>14.48</td>
+      <td>-5.42</td>
+      <td>-23166645</td>
+      <td>10601647</td>
+      <td>33768292</td>
+      <td>44369939</td>
+    </tr>
+    <tr>
+      <th>风帆股份</th>
+      <td>99.92</td>
+      <td>5.84</td>
+      <td>-96574971</td>
+      <td>54102772</td>
+      <td>150677743</td>
+      <td>204780515</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">yutong</span> <span class="o">=</span> <span class="n">SH</span><span class="p">[</span><span class="n">SH</span><span class="o">.</span><span class="n">名称</span> <span class="o">==</span> <span class="s">&quot;宇通客车&quot;</span><span class="p">]</span>
@@ -409,7 +716,7 @@ a.back-to-top {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -508,7 +815,7 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Javascript</span>
@@ -517,6 +824,8 @@ a.back-to-top {
 
 <span class="c">#out = yutong.to_json(orient=&#39;columns&#39;,date_unit=&#39;s&#39;)</span>
 <span class="n">out</span> <span class="o">=</span> <span class="n">yutong</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s">&#39;records&#39;</span><span class="p">,</span> <span class="n">date_unit</span><span class="o">=</span><span class="s">&#39;s&#39;</span><span class="p">)</span>
+<span class="n">out2</span> <span class="o">=</span> <span class="n">data_late</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s">&#39;columns&#39;</span><span class="p">,</span> <span class="n">date_unit</span><span class="o">=</span><span class="s">&#39;s&#39;</span><span class="p">)</span>
+<span class="n">out10</span> <span class="o">=</span> <span class="n">data_late10</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s">&#39;columns&#39;</span><span class="p">,</span> <span class="n">date_unit</span><span class="o">=</span><span class="s">&#39;s&#39;</span><span class="p">)</span>
 <span class="c"># There should be no code after Javascript </span>
 <span class="n">Javascript</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
 <span class="s">           window.out={};</span>
@@ -531,7 +840,7 @@ a.back-to-top {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[32]:</div>
 
 
 <div class="output_subarea output_javascript output_execute_result">
@@ -550,7 +859,77 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">Javascript</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
+<span class="s">           window.out2={};</span>
+<span class="s">           &quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
+
+
+<div class="output_subarea output_javascript output_execute_result">
+<script type="text/javascript">
+
+           window.out2={"\u6536\u76d8\u4ef7":{"\u4e0a\u6d77\u673a\u573a":92.53,"\u4e0a\u6d77\u7535\u6c14":12.43,"\u4e0a\u6d77\u8d1d\u5cad":21.76,"\u4e2d\u4fe1\u8bc1\u5238":80.45,"\u4e2d\u56fd\u592a\u4fdd":29.59,"\u4e2d\u56fd\u5e73\u5b89":182.66,"\u4e2d\u56fd\u5efa\u7b51":6.46,"\u4e50\u51ef\u80f6\u7247":22.11,"\u4e9a\u6cf0\u96c6\u56e2":7.43,"\u4f0a\u5229\u80a1\u4efd":70.7,"\u4fdd\u5229\u5730\u4ea7":22.68,"\u5357\u65b9\u822a\u7a7a":17.69,"\u57ce\u6295\u63a7\u80a1":46.1,"\u5b87\u901a\u5ba2\u8f66":22.74,"\u5b89\u4fe1\u4fe1\u6258":38.81,"\u5de5\u5546\u94f6\u884c":4.61,"\u5f20\u6c5f\u9ad8\u79d1":31.28,"\u6052\u751f\u7535\u5b50":127.13,"\u65b0\u534e\u4fdd\u9669":109.5,"\u6749\u6749\u80a1\u4efd":39.64,"\u6c38\u8f89\u8d85\u5e02":20.77,"\u6d77\u87ba\u6c34\u6ce5":17.94,"\u6d77\u901a\u8bc1\u5238":32.23,"\u8d35\u5dde\u8305\u53f0":891.01,"\u91d1\u5730\u96c6\u56e2":14.48,"\u98ce\u5e06\u80a1\u4efd":99.92},"\u6da8\u8dcc\u5e45":{"\u4e0a\u6d77\u673a\u573a":-1.35,"\u4e0a\u6d77\u7535\u6c14":0.08,"\u4e0a\u6d77\u8d1d\u5cad":-0.18,"\u4e2d\u4fe1\u8bc1\u5238":3.01,"\u4e2d\u56fd\u592a\u4fdd":1.13,"\u4e2d\u56fd\u5e73\u5b89":1.33,"\u4e2d\u56fd\u5efa\u7b51":0.94,"\u4e50\u51ef\u80f6\u7247":2.46,"\u4e9a\u6cf0\u96c6\u56e2":1.64,"\u4f0a\u5229\u80a1\u4efd":8.76,"\u4fdd\u5229\u5730\u4ea7":-6.17,"\u5357\u65b9\u822a\u7a7a":2.06,"\u57ce\u6295\u63a7\u80a1":-9.04,"\u5b87\u901a\u5ba2\u8f66":4.31,"\u5b89\u4fe1\u4fe1\u6258":-0.87,"\u5de5\u5546\u94f6\u884c":0.44,"\u5f20\u6c5f\u9ad8\u79d1":4.44,"\u6052\u751f\u7535\u5b50":-5.66,"\u65b0\u534e\u4fdd\u9669":6.17,"\u6749\u6749\u80a1\u4efd":9.99,"\u6c38\u8f89\u8d85\u5e02":3.32,"\u6d77\u87ba\u6c34\u6ce5":2.75,"\u6d77\u901a\u8bc1\u5238":-4.23,"\u8d35\u5dde\u8305\u53f0":1.72,"\u91d1\u5730\u96c6\u56e2":-5.42,"\u98ce\u5e06\u80a1\u4efd":5.84},"\u51c0\u4e70\u989d":{"\u4e0a\u6d77\u673a\u573a":-163131088,"\u4e0a\u6d77\u7535\u6c14":-69238068,"\u4e0a\u6d77\u8d1d\u5cad":-43536062,"\u4e2d\u4fe1\u8bc1\u5238":20147257,"\u4e2d\u56fd\u592a\u4fdd":-82868951,"\u4e2d\u56fd\u5e73\u5b89":-445152908,"\u4e2d\u56fd\u5efa\u7b51":30238418,"\u4e50\u51ef\u80f6\u7247":37973176,"\u4e9a\u6cf0\u96c6\u56e2":-82373182,"\u4f0a\u5229\u80a1\u4efd":-695670046,"\u4fdd\u5229\u5730\u4ea7":-56782977,"\u5357\u65b9\u822a\u7a7a":39906171,"\u57ce\u6295\u63a7\u80a1":11580391,"\u5b87\u901a\u5ba2\u8f66":35509305,"\u5b89\u4fe1\u4fe1\u6258":183536597,"\u5de5\u5546\u94f6\u884c":34193248,"\u5f20\u6c5f\u9ad8\u79d1":61263346,"\u6052\u751f\u7535\u5b50":-7674549,"\u65b0\u534e\u4fdd\u9669":-122865377,"\u6749\u6749\u80a1\u4efd":-2866847,"\u6c38\u8f89\u8d85\u5e02":15376747,"\u6d77\u87ba\u6c34\u6ce5":-46190635,"\u6d77\u901a\u8bc1\u5238":-77655946,"\u8d35\u5dde\u8305\u53f0":-56396821,"\u91d1\u5730\u96c6\u56e2":-23166645,"\u98ce\u5e06\u80a1\u4efd":-96574971},"\u4e70\u5165\u91d1\u989d":{"\u4e0a\u6d77\u673a\u573a":223494282,"\u4e0a\u6d77\u7535\u6c14":2564235,"\u4e0a\u6d77\u8d1d\u5cad":2236805,"\u4e2d\u4fe1\u8bc1\u5238":206379266,"\u4e2d\u56fd\u592a\u4fdd":2249433,"\u4e2d\u56fd\u5e73\u5b89":206491855,"\u4e2d\u56fd\u5efa\u7b51":35745770,"\u4e50\u51ef\u80f6\u7247":39385285,"\u4e9a\u6cf0\u96c6\u56e2":709665,"\u4f0a\u5229\u80a1\u4efd":94317231,"\u4fdd\u5229\u5730\u4ea7":77896828,"\u5357\u65b9\u822a\u7a7a":73018308,"\u57ce\u6295\u63a7\u80a1":68616448,"\u5b87\u901a\u5ba2\u8f66":72463562,"\u5b89\u4fe1\u4fe1\u6258":191126747,"\u5de5\u5546\u94f6\u884c":38855286,"\u5f20\u6c5f\u9ad8\u79d1":67738236,"\u6052\u751f\u7535\u5b50":68672401,"\u65b0\u534e\u4fdd\u9669":42044764,"\u6749\u6749\u80a1\u4efd":24486796,"\u6c38\u8f89\u8d85\u5e02":116542950,"\u6d77\u87ba\u6c34\u6ce5":55035529,"\u6d77\u901a\u8bc1\u5238":34954188,"\u8d35\u5dde\u8305\u53f0":284161807,"\u91d1\u5730\u96c6\u56e2":10601647,"\u98ce\u5e06\u80a1\u4efd":54102772},"\u5356\u51fa\u91d1\u989d":{"\u4e0a\u6d77\u673a\u573a":386625370,"\u4e0a\u6d77\u7535\u6c14":71802303,"\u4e0a\u6d77\u8d1d\u5cad":45772867,"\u4e2d\u4fe1\u8bc1\u5238":186232009,"\u4e2d\u56fd\u592a\u4fdd":85118384,"\u4e2d\u56fd\u5e73\u5b89":651644763,"\u4e2d\u56fd\u5efa\u7b51":5507352,"\u4e50\u51ef\u80f6\u7247":1412109,"\u4e9a\u6cf0\u96c6\u56e2":83082847,"\u4f0a\u5229\u80a1\u4efd":789987277,"\u4fdd\u5229\u5730\u4ea7":134679805,"\u5357\u65b9\u822a\u7a7a":33112137,"\u57ce\u6295\u63a7\u80a1":57036057,"\u5b87\u901a\u5ba2\u8f66":36954257,"\u5b89\u4fe1\u4fe1\u6258":7590150,"\u5de5\u5546\u94f6\u884c":4662038,"\u5f20\u6c5f\u9ad8\u79d1":6474890,"\u6052\u751f\u7535\u5b50":76346950,"\u65b0\u534e\u4fdd\u9669":164910141,"\u6749\u6749\u80a1\u4efd":27353643,"\u6c38\u8f89\u8d85\u5e02":101166203,"\u6d77\u87ba\u6c34\u6ce5":101226164,"\u6d77\u901a\u8bc1\u5238":112610134,"\u8d35\u5dde\u8305\u53f0":340558628,"\u91d1\u5730\u96c6\u56e2":33768292,"\u98ce\u5e06\u80a1\u4efd":150677743},"\u6210\u4ea4\u91d1\u989d":{"\u4e0a\u6d77\u673a\u573a":610119652,"\u4e0a\u6d77\u7535\u6c14":74366538,"\u4e0a\u6d77\u8d1d\u5cad":48009672,"\u4e2d\u4fe1\u8bc1\u5238":392611275,"\u4e2d\u56fd\u592a\u4fdd":87367817,"\u4e2d\u56fd\u5e73\u5b89":858136618,"\u4e2d\u56fd\u5efa\u7b51":41253122,"\u4e50\u51ef\u80f6\u7247":40797394,"\u4e9a\u6cf0\u96c6\u56e2":83792512,"\u4f0a\u5229\u80a1\u4efd":884304508,"\u4fdd\u5229\u5730\u4ea7":212576633,"\u5357\u65b9\u822a\u7a7a":106130445,"\u57ce\u6295\u63a7\u80a1":125652505,"\u5b87\u901a\u5ba2\u8f66":109417819,"\u5b89\u4fe1\u4fe1\u6258":198716897,"\u5de5\u5546\u94f6\u884c":43517324,"\u5f20\u6c5f\u9ad8\u79d1":74213126,"\u6052\u751f\u7535\u5b50":145019351,"\u65b0\u534e\u4fdd\u9669":206954905,"\u6749\u6749\u80a1\u4efd":51840439,"\u6c38\u8f89\u8d85\u5e02":217709153,"\u6d77\u87ba\u6c34\u6ce5":156261693,"\u6d77\u901a\u8bc1\u5238":147564322,"\u8d35\u5dde\u8305\u53f0":624720435,"\u91d1\u5730\u96c6\u56e2":44369939,"\u98ce\u5e06\u80a1\u4efd":204780515}};
+           
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">Javascript</span><span class="p">(</span><span class="s">&quot;&quot;&quot;</span>
+<span class="s">           window.out10={};</span>
+<span class="s">           &quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out10</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
+
+
+<div class="output_subarea output_javascript output_execute_result">
+<script type="text/javascript">
+
+           window.out10={"\u6536\u76d8\u4ef7":{"\u4e0a\u6c7d\u96c6\u56e2":20.75,"\u4e0a\u6d77\u673a\u573a":213.03,"\u4e0a\u6d77\u7535\u6c14":12.43,"\u4e0a\u6d77\u8d1d\u5cad":21.76,"\u4e1c\u5174\u8bc1\u5238":32.31,"\u4e1c\u5434\u8bc1\u5238":16.57,"\u4e2d\u4f53\u4ea7\u4e1a":25.43,"\u4e2d\u4fe1\u8bc1\u5238":118.23,"\u4e2d\u56fd\u56fd\u65c5":57.09,"\u4e2d\u56fd\u592a\u4fdd":29.59,"\u4e2d\u56fd\u5e73\u5b89":360.05,"\u4e2d\u56fd\u5efa\u7b51":12.98,"\u4e2d\u56fd\u6838\u7535":9.96,"\u4e2d\u56fd\u91cd\u5de5":19.78,"\u4e2d\u9752\u65c5":22.74,"\u4e50\u51ef\u80f6\u7247":22.11,"\u4e9a\u6cf0\u96c6\u56e2":14.74,"\u4eba\u798f\u533b\u836f":20.73,"\u4f0a\u5229\u80a1\u4efd":85.6,"\u4fdd\u5229\u5730\u4ea7":44.74,"\u5174\u4e1a\u94f6\u884c":16.39,"\u534e\u57df\u6c7d\u8f66":49.93,"\u5357\u65b9\u822a\u7a7a":17.69,"\u56fd\u6cf0\u541b\u5b89":25.31,"\u57ce\u6295\u63a7\u80a1":46.1,"\u590d\u661f\u533b\u836f":24.26,"\u5b87\u901a\u5ba2\u8f66":86.85,"\u5b89\u4fe1\u4fe1\u6258":96.13,"\u5de5\u5546\u94f6\u884c":4.61,"\u5f20\u6c5f\u9ad8\u79d1":31.28,"\u6052\u751f\u7535\u5b50":127.13,"\u62db\u5546\u94f6\u884c":17.52,"\u65b0\u534e\u4fdd\u9669":160.68,"\u6749\u6749\u80a1\u4efd":39.64,"\u6c11\u751f\u94f6\u884c":8.67,"\u6c38\u8f89\u8d85\u5e02":41.74,"\u6d77\u87ba\u6c34\u6ce5":34.83,"\u6d77\u901a\u8bc1\u5238":32.23,"\u8d35\u5dde\u8305\u53f0":1323.75,"\u91d1\u5730\u96c6\u56e2":14.48,"\u957f\u6c5f\u7535\u529b":41.26,"\u98ce\u5e06\u80a1\u4efd":99.92,"\u9996\u521b\u80a1\u4efd":10.33},"\u6da8\u8dcc\u5e45":{"\u4e0a\u6c7d\u96c6\u56e2":1.67,"\u4e0a\u6d77\u673a\u573a":0.58,"\u4e0a\u6d77\u7535\u6c14":0.08,"\u4e0a\u6d77\u8d1d\u5cad":-0.18,"\u4e1c\u5174\u8bc1\u5238":3.36,"\u4e1c\u5434\u8bc1\u5238":9.66,"\u4e2d\u4f53\u4ea7\u4e1a":3.46,"\u4e2d\u4fe1\u8bc1\u5238":1.62,"\u4e2d\u56fd\u56fd\u65c5":3.24,"\u4e2d\u56fd\u592a\u4fdd":1.13,"\u4e2d\u56fd\u5e73\u5b89":4.86,"\u4e2d\u56fd\u5efa\u7b51":4.1,"\u4e2d\u56fd\u6838\u7535":0.3,"\u4e2d\u56fd\u91cd\u5de5":5.01,"\u4e2d\u9752\u65c5":0.62,"\u4e50\u51ef\u80f6\u7247":2.46,"\u4e9a\u6cf0\u96c6\u56e2":1.37,"\u4eba\u798f\u533b\u836f":2.88,"\u4f0a\u5229\u80a1\u4efd":10.81,"\u4fdd\u5229\u5730\u4ea7":-6.33,"\u5174\u4e1a\u94f6\u884c":1.3,"\u534e\u57df\u6c7d\u8f66":1.78,"\u5357\u65b9\u822a\u7a7a":2.06,"\u56fd\u6cf0\u541b\u5b89":-0.82,"\u57ce\u6295\u63a7\u80a1":-9.04,"\u590d\u661f\u533b\u836f":-3.77,"\u5b87\u901a\u5ba2\u8f66":10.08,"\u5b89\u4fe1\u4fe1\u6258":3.44,"\u5de5\u5546\u94f6\u884c":0.44,"\u5f20\u6c5f\u9ad8\u79d1":4.44,"\u6052\u751f\u7535\u5b50":-5.66,"\u62db\u5546\u94f6\u884c":2.46,"\u65b0\u534e\u4fdd\u9669":3.8,"\u6749\u6749\u80a1\u4efd":9.99,"\u6c11\u751f\u94f6\u884c":-0.23,"\u6c38\u8f89\u8d85\u5e02":9.09,"\u6d77\u87ba\u6c34\u6ce5":4.13,"\u6d77\u901a\u8bc1\u5238":-4.23,"\u8d35\u5dde\u8305\u53f0":3.1,"\u91d1\u5730\u96c6\u56e2":-5.42,"\u957f\u6c5f\u7535\u529b":0.73,"\u98ce\u5e06\u80a1\u4efd":5.84,"\u9996\u521b\u80a1\u4efd":2.28},"\u51c0\u4e70\u989d":{"\u4e0a\u6c7d\u96c6\u56e2":-13597743,"\u4e0a\u6d77\u673a\u573a":96308498,"\u4e0a\u6d77\u7535\u6c14":-69238068,"\u4e0a\u6d77\u8d1d\u5cad":-43536062,"\u4e1c\u5174\u8bc1\u5238":-32249795,"\u4e1c\u5434\u8bc1\u5238":35974109,"\u4e2d\u4f53\u4ea7\u4e1a":25590464,"\u4e2d\u4fe1\u8bc1\u5238":57673645,"\u4e2d\u56fd\u56fd\u65c5":111930909,"\u4e2d\u56fd\u592a\u4fdd":-82868951,"\u4e2d\u56fd\u5e73\u5b89":-662850329,"\u4e2d\u56fd\u5efa\u7b51":69555931,"\u4e2d\u56fd\u6838\u7535":102730128,"\u4e2d\u56fd\u91cd\u5de5":-142338785,"\u4e2d\u9752\u65c5":51211776,"\u4e50\u51ef\u80f6\u7247":37973176,"\u4e9a\u6cf0\u96c6\u56e2":-443643766,"\u4eba\u798f\u533b\u836f":42922438,"\u4f0a\u5229\u80a1\u4efd":-718073314,"\u4fdd\u5229\u5730\u4ea7":-34504577,"\u5174\u4e1a\u94f6\u884c":-53961802,"\u534e\u57df\u6c7d\u8f66":-292299141,"\u5357\u65b9\u822a\u7a7a":39906171,"\u56fd\u6cf0\u541b\u5b89":87953533,"\u57ce\u6295\u63a7\u80a1":11580391,"\u590d\u661f\u533b\u836f":-56847793,"\u5b87\u901a\u5ba2\u8f66":181147229,"\u5b89\u4fe1\u4fe1\u6258":423916507,"\u5de5\u5546\u94f6\u884c":34193248,"\u5f20\u6c5f\u9ad8\u79d1":61263346,"\u6052\u751f\u7535\u5b50":-7674549,"\u62db\u5546\u94f6\u884c":-110232652,"\u65b0\u534e\u4fdd\u9669":-75427639,"\u6749\u6749\u80a1\u4efd":-2866847,"\u6c11\u751f\u94f6\u884c":7148255,"\u6c38\u8f89\u8d85\u5e02":275963316,"\u6d77\u87ba\u6c34\u6ce5":-158906092,"\u6d77\u901a\u8bc1\u5238":-77655946,"\u8d35\u5dde\u8305\u53f0":105565768,"\u91d1\u5730\u96c6\u56e2":-23166645,"\u957f\u6c5f\u7535\u529b":57950926,"\u98ce\u5e06\u80a1\u4efd":-96574971,"\u9996\u521b\u80a1\u4efd":-53849908},"\u4e70\u5165\u91d1\u989d":{"\u4e0a\u6c7d\u96c6\u56e2":30377148,"\u4e0a\u6d77\u673a\u573a":553995260,"\u4e0a\u6d77\u7535\u6c14":2564235,"\u4e0a\u6d77\u8d1d\u5cad":2236805,"\u4e1c\u5174\u8bc1\u5238":7182075,"\u4e1c\u5434\u8bc1\u5238":41772832,"\u4e2d\u4f53\u4ea7\u4e1a":35560653,"\u4e2d\u4fe1\u8bc1\u5238":271454040,"\u4e2d\u56fd\u56fd\u65c5":115342076,"\u4e2d\u56fd\u592a\u4fdd":2249433,"\u4e2d\u56fd\u5e73\u5b89":622250872,"\u4e2d\u56fd\u5efa\u7b51":78106153,"\u4e2d\u56fd\u6838\u7535":151095357,"\u4e2d\u56fd\u91cd\u5de5":3351254,"\u4e2d\u9752\u65c5":54438849,"\u4e50\u51ef\u80f6\u7247":39385285,"\u4e9a\u6cf0\u96c6\u56e2":737062,"\u4eba\u798f\u533b\u836f":44151711,"\u4f0a\u5229\u80a1\u4efd":129571987,"\u4fdd\u5229\u5730\u4ea7":171507935,"\u5174\u4e1a\u94f6\u884c":17236947,"\u534e\u57df\u6c7d\u8f66":7928928,"\u5357\u65b9\u822a\u7a7a":73018308,"\u56fd\u6cf0\u541b\u5b89":148561883,"\u57ce\u6295\u63a7\u80a1":68616448,"\u590d\u661f\u533b\u836f":2161087,"\u5b87\u901a\u5ba2\u8f66":257989856,"\u5b89\u4fe1\u4fe1\u6258":444446439,"\u5de5\u5546\u94f6\u884c":38855286,"\u5f20\u6c5f\u9ad8\u79d1":67738236,"\u6052\u751f\u7535\u5b50":68672401,"\u62db\u5546\u94f6\u884c":16867380,"\u65b0\u534e\u4fdd\u9669":99206990,"\u6749\u6749\u80a1\u4efd":24486796,"\u6c11\u751f\u94f6\u884c":27024076,"\u6c38\u8f89\u8d85\u5e02":394870537,"\u6d77\u87ba\u6c34\u6ce5":56009563,"\u6d77\u901a\u8bc1\u5238":34954188,"\u8d35\u5dde\u8305\u53f0":473406425,"\u91d1\u5730\u96c6\u56e2":10601647,"\u957f\u6c5f\u7535\u529b":125083793,"\u98ce\u5e06\u80a1\u4efd":54102772,"\u9996\u521b\u80a1\u4efd":848713},"\u5356\u51fa\u91d1\u989d":{"\u4e0a\u6c7d\u96c6\u56e2":43974891,"\u4e0a\u6d77\u673a\u573a":457686762,"\u4e0a\u6d77\u7535\u6c14":71802303,"\u4e0a\u6d77\u8d1d\u5cad":45772867,"\u4e1c\u5174\u8bc1\u5238":39431870,"\u4e1c\u5434\u8bc1\u5238":5798723,"\u4e2d\u4f53\u4ea7\u4e1a":9970189,"\u4e2d\u4fe1\u8bc1\u5238":213780395,"\u4e2d\u56fd\u56fd\u65c5":3411167,"\u4e2d\u56fd\u592a\u4fdd":85118384,"\u4e2d\u56fd\u5e73\u5b89":1285101201,"\u4e2d\u56fd\u5efa\u7b51":8550222,"\u4e2d\u56fd\u6838\u7535":48365229,"\u4e2d\u56fd\u91cd\u5de5":145690039,"\u4e2d\u9752\u65c5":3227073,"\u4e50\u51ef\u80f6\u7247":1412109,"\u4e9a\u6cf0\u96c6\u56e2":444380828,"\u4eba\u798f\u533b\u836f":1229273,"\u4f0a\u5229\u80a1\u4efd":847645301,"\u4fdd\u5229\u5730\u4ea7":206012512,"\u5174\u4e1a\u94f6\u884c":71198749,"\u534e\u57df\u6c7d\u8f66":300228069,"\u5357\u65b9\u822a\u7a7a":33112137,"\u56fd\u6cf0\u541b\u5b89":60608350,"\u57ce\u6295\u63a7\u80a1":57036057,"\u590d\u661f\u533b\u836f":59008880,"\u5b87\u901a\u5ba2\u8f66":76842627,"\u5b89\u4fe1\u4fe1\u6258":20529932,"\u5de5\u5546\u94f6\u884c":4662038,"\u5f20\u6c5f\u9ad8\u79d1":6474890,"\u6052\u751f\u7535\u5b50":76346950,"\u62db\u5546\u94f6\u884c":127100032,"\u65b0\u534e\u4fdd\u9669":174634629,"\u6749\u6749\u80a1\u4efd":27353643,"\u6c11\u751f\u94f6\u884c":19875821,"\u6c38\u8f89\u8d85\u5e02":118907221,"\u6d77\u87ba\u6c34\u6ce5":214915655,"\u6d77\u901a\u8bc1\u5238":112610134,"\u8d35\u5dde\u8305\u53f0":367840657,"\u91d1\u5730\u96c6\u56e2":33768292,"\u957f\u6c5f\u7535\u529b":67132867,"\u98ce\u5e06\u80a1\u4efd":150677743,"\u9996\u521b\u80a1\u4efd":54698621},"\u6210\u4ea4\u91d1\u989d":{"\u4e0a\u6c7d\u96c6\u56e2":74352039,"\u4e0a\u6d77\u673a\u573a":1011682022,"\u4e0a\u6d77\u7535\u6c14":74366538,"\u4e0a\u6d77\u8d1d\u5cad":48009672,"\u4e1c\u5174\u8bc1\u5238":46613945,"\u4e1c\u5434\u8bc1\u5238":47571555,"\u4e2d\u4f53\u4ea7\u4e1a":45530842,"\u4e2d\u4fe1\u8bc1\u5238":485234435,"\u4e2d\u56fd\u56fd\u65c5":118753243,"\u4e2d\u56fd\u592a\u4fdd":87367817,"\u4e2d\u56fd\u5e73\u5b89":1907352073,"\u4e2d\u56fd\u5efa\u7b51":86656375,"\u4e2d\u56fd\u6838\u7535":199460586,"\u4e2d\u56fd\u91cd\u5de5":149041293,"\u4e2d\u9752\u65c5":57665922,"\u4e50\u51ef\u80f6\u7247":40797394,"\u4e9a\u6cf0\u96c6\u56e2":445117890,"\u4eba\u798f\u533b\u836f":45380984,"\u4f0a\u5229\u80a1\u4efd":977217288,"\u4fdd\u5229\u5730\u4ea7":377520447,"\u5174\u4e1a\u94f6\u884c":88435696,"\u534e\u57df\u6c7d\u8f66":308156997,"\u5357\u65b9\u822a\u7a7a":106130445,"\u56fd\u6cf0\u541b\u5b89":209170233,"\u57ce\u6295\u63a7\u80a1":125652505,"\u590d\u661f\u533b\u836f":61169967,"\u5b87\u901a\u5ba2\u8f66":334832483,"\u5b89\u4fe1\u4fe1\u6258":464976371,"\u5de5\u5546\u94f6\u884c":43517324,"\u5f20\u6c5f\u9ad8\u79d1":74213126,"\u6052\u751f\u7535\u5b50":145019351,"\u62db\u5546\u94f6\u884c":143967412,"\u65b0\u534e\u4fdd\u9669":273841619,"\u6749\u6749\u80a1\u4efd":51840439,"\u6c11\u751f\u94f6\u884c":46899897,"\u6c38\u8f89\u8d85\u5e02":513777758,"\u6d77\u87ba\u6c34\u6ce5":270925218,"\u6d77\u901a\u8bc1\u5238":147564322,"\u8d35\u5dde\u8305\u53f0":841247082,"\u91d1\u5730\u96c6\u56e2":44369939,"\u957f\u6c5f\u7535\u529b":192216660,"\u98ce\u5e06\u80a1\u4efd":204780515,"\u9996\u521b\u80a1\u4efd":55547334}};
+           
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
@@ -579,7 +958,65 @@ a.back-to-top {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
+&lt;div id=&quot;container2&quot; style=&quot;min-width: 310px; height: 400px; margin: 0 auto&quot;&gt;&lt;/div&gt;
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="k">html</span>
+&lt;div id=&quot;container3&quot; style=&quot;min-width: 310px; height: 400px; margin: 0 auto&quot;&gt;&lt;/div&gt;
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="nx">javascript</span>
@@ -737,6 +1174,330 @@ $(function () {var chart1 = new Highcharts.chart(configure)});
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="nx">javascript</span>
+<span class="c1">// out has different data order from python input</span>
+
+<span class="kd">var</span> <span class="nx">format</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">time</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s2">&quot;%Y-%m-%d&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">_</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">涨跌幅</span><span class="p">);</span>
+    
+<span class="c1">// alert(date);</span>
+<span class="c1">// date = $.map(date,function (d){return d.slice(0,10)});</span>
+<span class="c1">// data.forEach(function (d, index, array) {plot1.push(d.Age);});</span>
+<span class="c1">// format.parse(&quot;2011-01-01&quot;); // returns a Date</span>
+<span class="c1">//alert(date);</span>
+<span class="kd">var</span> <span class="nx">configure</span> <span class="o">=</span>  <span class="p">{</span>
+               
+        <span class="nx">chart</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;column&#39;</span><span class="p">,</span>
+            <span class="nx">renderTo</span><span class="o">:</span> <span class="s1">&#39;container2&#39;</span>
+        <span class="p">},</span>
+        <span class="nx">title</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;最新5日&#39;</span>
+        <span class="p">},</span>
+        <span class="nx">subtitle</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;沪港通数据&#39;</span>
+        <span class="p">},</span>
+        <span class="nx">xAxis</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">categories</span><span class="o">:</span> <span class="nx">name</span><span class="p">,</span>
+            <span class="nx">crosshair</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nx">yAxis</span><span class="o">:</span> <span class="p">{</span>
+            <span class="c1">//min: 0,</span>
+            <span class="nx">title</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;金额&#39;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nx">tooltip</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">headerFormat</span><span class="o">:</span> <span class="s1">&#39;&lt;span style=&quot;font-size:10px&quot;&gt;{point.key}&lt;/span&gt;&lt;table&gt;&#39;</span><span class="p">,</span>
+            <span class="nx">pointFormat</span><span class="o">:</span> <span class="s1">&#39;&lt;tr&gt;&lt;td style=&quot;color:{series.color};padding:0&quot;&gt;{series.name}: &lt;/td&gt;&#39;</span> <span class="o">+</span>
+                <span class="s1">&#39;&lt;td style=&quot;padding:0&quot;&gt;&lt;b&gt;{point.y:.1f} mm&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&#39;</span><span class="p">,</span>
+            <span class="nx">footerFormat</span><span class="o">:</span> <span class="s1">&#39;&lt;/table&gt;&#39;</span><span class="p">,</span>
+            <span class="nx">shared</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">useHTML</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nx">plotOptions</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">column</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">pointPadding</span><span class="o">:</span> <span class="mf">0.2</span><span class="p">,</span>
+                <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">0</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nx">series</span><span class="o">:</span> <span class="p">[{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;净买额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">净买额</span><span class="p">)</span>
+
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;买入金额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">买入金额</span><span class="p">)</span>
+
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;卖出金额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">卖出金额</span><span class="p">)</span>
+
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;成交金额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">成交金额</span><span class="p">)</span>
+
+        <span class="p">}]</span>
+    <span class="p">};</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span><span class="kd">var</span> <span class="nx">chart2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Highcharts</span><span class="p">.</span><span class="nx">chart</span><span class="p">(</span><span class="nx">configure</span><span class="p">)});</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+// out has different data order from python input
+
+var format = d3.time.format("%Y-%m-%d");
+var name = _.keys(out2.涨跌幅);
+    
+// alert(date);
+// date = $.map(date,function (d){return d.slice(0,10)});
+// data.forEach(function (d, index, array) {plot1.push(d.Age);});
+// format.parse("2011-01-01"); // returns a Date
+//alert(date);
+var configure =  {
+               
+        chart: {
+            type: 'column',
+            renderTo: 'container2'
+        },
+        title: {
+            text: '最新5日'
+        },
+        subtitle: {
+            text: '沪港通数据'
+        },
+        xAxis: {
+            categories: name,
+            crosshair: true
+        },
+        yAxis: {
+            //min: 0,
+            title: {
+                text: '金额'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '净买额',
+            data: _.values(out2.净买额)
+
+        }, {
+            name: '买入金额',
+            data: _.values(out2.买入金额)
+
+        }, {
+            name: '卖出金额',
+            data: _.values(out2.卖出金额)
+
+        }, {
+            name: '成交金额',
+            data: _.values(out2.成交金额)
+
+        }]
+    };
+
+$(function () {var chart2 = new Highcharts.chart(configure)});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">%%</span><span class="nx">javascript</span>
+<span class="c1">// out has different data order from python input</span>
+<span class="nx">out2</span> <span class="o">=</span> <span class="nx">out10</span>
+<span class="kd">var</span> <span class="nx">format</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">time</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s2">&quot;%Y-%m-%d&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">_</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">涨跌幅</span><span class="p">);</span>
+    
+<span class="c1">// alert(date);</span>
+<span class="c1">// date = $.map(date,function (d){return d.slice(0,10)});</span>
+<span class="c1">// data.forEach(function (d, index, array) {plot1.push(d.Age);});</span>
+<span class="c1">// format.parse(&quot;2011-01-01&quot;); // returns a Date</span>
+<span class="c1">//alert(date);</span>
+<span class="kd">var</span> <span class="nx">configure</span> <span class="o">=</span>  <span class="p">{</span>
+               
+        <span class="nx">chart</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;column&#39;</span><span class="p">,</span>
+            <span class="nx">renderTo</span><span class="o">:</span> <span class="s1">&#39;container3&#39;</span>
+        <span class="p">},</span>
+        <span class="nx">title</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;最新10日&#39;</span>
+        <span class="p">},</span>
+        <span class="nx">subtitle</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;沪港通数据&#39;</span>
+        <span class="p">},</span>
+        <span class="nx">xAxis</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">categories</span><span class="o">:</span> <span class="nx">name</span><span class="p">,</span>
+            <span class="nx">crosshair</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nx">yAxis</span><span class="o">:</span> <span class="p">{</span>
+            <span class="c1">//min: 0,</span>
+            <span class="nx">title</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;金额&#39;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nx">tooltip</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">headerFormat</span><span class="o">:</span> <span class="s1">&#39;&lt;span style=&quot;font-size:10px&quot;&gt;{point.key}&lt;/span&gt;&lt;table&gt;&#39;</span><span class="p">,</span>
+            <span class="nx">pointFormat</span><span class="o">:</span> <span class="s1">&#39;&lt;tr&gt;&lt;td style=&quot;color:{series.color};padding:0&quot;&gt;{series.name}: &lt;/td&gt;&#39;</span> <span class="o">+</span>
+                <span class="s1">&#39;&lt;td style=&quot;padding:0&quot;&gt;&lt;b&gt;{point.y:.1f} mm&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&#39;</span><span class="p">,</span>
+            <span class="nx">footerFormat</span><span class="o">:</span> <span class="s1">&#39;&lt;/table&gt;&#39;</span><span class="p">,</span>
+            <span class="nx">shared</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">useHTML</span><span class="o">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nx">plotOptions</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">column</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">pointPadding</span><span class="o">:</span> <span class="mf">0.2</span><span class="p">,</span>
+                <span class="nx">borderWidth</span><span class="o">:</span> <span class="mi">0</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nx">series</span><span class="o">:</span> <span class="p">[{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;净买额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">净买额</span><span class="p">)</span>
+
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;买入金额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">买入金额</span><span class="p">)</span>
+
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;卖出金额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">卖出金额</span><span class="p">)</span>
+
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;成交金额&#39;</span><span class="p">,</span>
+            <span class="nx">data</span><span class="o">:</span> <span class="nx">_</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">out2</span><span class="p">.</span><span class="nx">成交金额</span><span class="p">)</span>
+
+        <span class="p">}]</span>
+    <span class="p">};</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span><span class="kd">var</span> <span class="nx">chart2</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Highcharts</span><span class="p">.</span><span class="nx">chart</span><span class="p">(</span><span class="nx">configure</span><span class="p">)});</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+// out has different data order from python input
+out2 = out10
+var format = d3.time.format("%Y-%m-%d");
+var name = _.keys(out2.涨跌幅);
+    
+// alert(date);
+// date = $.map(date,function (d){return d.slice(0,10)});
+// data.forEach(function (d, index, array) {plot1.push(d.Age);});
+// format.parse("2011-01-01"); // returns a Date
+//alert(date);
+var configure =  {
+               
+        chart: {
+            type: 'column',
+            renderTo: 'container3'
+        },
+        title: {
+            text: '最新10日'
+        },
+        subtitle: {
+            text: '沪港通数据'
+        },
+        xAxis: {
+            categories: name,
+            crosshair: true
+        },
+        yAxis: {
+            //min: 0,
+            title: {
+                text: '金额'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '净买额',
+            data: _.values(out2.净买额)
+
+        }, {
+            name: '买入金额',
+            data: _.values(out2.买入金额)
+
+        }, {
+            name: '卖出金额',
+            data: _.values(out2.卖出金额)
+
+        }, {
+            name: '成交金额',
+            data: _.values(out2.成交金额)
+
+        }]
+    };
+
+$(function () {var chart2 = new Highcharts.chart(configure)});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></p>
           </div>
           <div class="post-comments">
@@ -744,10 +1505,10 @@ $(function () {var chart1 = new Highcharts.chart(configure)});
             <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
 	<script type="text/javascript">
 	  var disqus_shortname = 'pathoflearning';
-          var disqus_identifier = '/blog/javascript-front-end-ipython-notebook';
-          var disqus_url = 'http://pathoflearning.com/blog/javascript-front-end-ipython-notebook';
-					//var disqus_url = 'www.pathoflearning.com/blog/javascript-front-end-ipython-notebook';
-          var disqus_title = 'A Demo for using Javascript as Front-end in Ipython Notebook';
+          var disqus_identifier = '/blog/javascript-front-end-ipython-notebook(2)';
+          var disqus_url = 'http://pathoflearning.com/blog/javascript-front-end-ipython-notebook(2)';
+					//var disqus_url = 'www.pathoflearning.com/blog/javascript-front-end-ipython-notebook(2)';
+          var disqus_title = 'A Demo for using Javascript as Front-end in Ipython Notebook(2)';
 	  (function() {
 	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
