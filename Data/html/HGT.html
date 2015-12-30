@@ -22,12 +22,14 @@
 <body>
 
   <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
   <script>
 
 
   $.getJSON( "http://www.pathoflearning.com/Data/HGT_YuTONG.txt", function( json ) {
    out = json;
-   });
+
 var date = _.pluck(out,'日期');
 // alert(date);
 date = $.map(date,function (d){return d.slice(0,10)});
@@ -92,5 +94,151 @@ var configure =  {
 
 $(function () {var chart1 = new Highcharts.chart(configure)});
 
+});
   </script>
+
+<script>
+$.getJSON( "http://www.pathoflearning.com/Data/HGT_5d.txt", function( json ) {
+ out2 = json;
+var name = _.keys(out2.涨跌幅);
+
+// alert(date);
+// date = $.map(date,function (d){return d.slice(0,10)});
+// data.forEach(function (d, index, array) {plot1.push(d.Age);});
+// format.parse("2011-01-01"); // returns a Date
+//alert(date);
+var configure2 =  {
+
+        chart: {
+            type: 'column',
+            renderTo: 'container2'
+        },
+        title: {
+            text: '最新5日'
+        },
+        subtitle: {
+            text: '沪港通数据'
+        },
+        xAxis: {
+            categories: name,
+            crosshair: true,
+            labels: {
+                  //  rotation: 50
+            }
+        },
+        yAxis: {
+            //min: 0,
+            title: {
+                text: '金额'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '净买额',
+            data: _.values(out2.净买额)
+
+        }, {
+            name: '买入金额',
+            data: _.values(out2.买入金额)
+
+        }, {
+            name: '卖出金额',
+            data: _.values(out2.卖出金额)
+
+        }, {
+            name: '成交金额',
+            data: _.values(out2.成交金额)
+
+        }]
+    };
+
+$(function () {var chart2 = new Highcharts.chart(configure2)});
+
+});
+
+</script>
+
+
+<script>
+$.getJSON( "http://www.pathoflearning.com/Data/HGT_10d.txt", function( json ) {
+ out10 = json;
+var name = _.keys(out10.涨跌幅);
+
+var configure3 =  {
+
+        chart: {
+            type: 'column',
+            renderTo: 'container3'
+        },
+        title: {
+            text: '最新10日'
+        },
+        subtitle: {
+            text: '沪港通数据'
+        },
+        xAxis: {
+            categories: name,
+            crosshair: true,
+            labels: {
+            //        rotation: 90
+            }
+        },
+        yAxis: {
+            //min: 0,
+            title: {
+                text: '金额'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: '净买额',
+            data: _.values(out10.净买额)
+
+        }, {
+            name: '买入金额',
+            data: _.values(out10.买入金额)
+
+        }, {
+            name: '卖出金额',
+            data: _.values(out10.卖出金额)
+
+        }, {
+            name: '成交金额',
+            data: _.values(out10.成交金额)
+
+        }]
+    };
+
+$(function () {var chart3 = new Highcharts.chart(configure3)});
+
+
+});
+</script>
+
 </body>
