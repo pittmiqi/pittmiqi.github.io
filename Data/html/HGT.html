@@ -20,12 +20,12 @@
 
 <body>
 
-  <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
   <script>
 
 
-  $.getJSON( "test.js", function( json ) {
-   out = json;  
+  $.getJSON( "http://www.pathoflearning.com/Data/HGT_YuTONG.txt", function( json ) {
+   out = json;
    });
 var date = _.pluck(out,'日期');
 // alert(date);
